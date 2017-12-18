@@ -1,0 +1,15 @@
+# config
+logo: /images/svdb.png
+keywords: "khanhtc, python, noob, geek, programmer"
+pubkey: 
+menu:
+  Home: /
+  Articles: /articles
+  About: /about
+
+# Content
+excerpt_link: Read more
+
+# Miscellaneous
+rss: /atom.xml
+google_analytics:

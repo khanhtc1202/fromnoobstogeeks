@@ -1,0 +1,16 @@
+if theme.pubkey
+  section.pubkey= theme.pubkey
+section.author
+  | Created by: #{config.author}
+section.contact
+  | Find me at: 
+  a(href='https://www.facebook.com/abua.zang') Facebook
+  |  &middot; 
+  a(href='https://github.com/khanhtc1202') Github
+section.copyright
+  a(href='http://opensource.org/licenses/MIT') MIT License
+  |  &middot;  Published with 
+  a(href='https://hexo.io/') Hexo
+  if config.feed && config.feed.url
+    |  &middot; 
+    a(href= config.feed.url) RSS Feed
