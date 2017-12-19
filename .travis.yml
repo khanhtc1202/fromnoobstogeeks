@@ -10,6 +10,6 @@ before_install:
 deploy:
   provider: script
   skip_cleanup: true
-  script: scp -r $TRAVIS_BUILD_DIR/* hoangnm@125.212.227.42:/home/hoangnm/web/fromnoobstogeeks/html
+  script: scp -r $TRAVIS_BUILD_DIR/* hoangnm@mystories.vn:/home/hoangnm/web/fromnoobstogeeks/html
   on:
     branch: master
