@@ -38,6 +38,8 @@ if is_page() && page.title.toLowerCase() == 'articles'
     if site.posts.toArray().length != 0
       | </ul>
   // include _comments
+  footer(itemscope, itemtype='https://schema.org/WPFooter')
+    include _footer
 else if is_page()
   article.full
     h1(itemprop='headline')= page.title
@@ -47,6 +49,8 @@ else if is_page()
         time(itemprop='dateModified', datetime= page.date.toISOString())= full_date(new Date(page.updated), ' dddd, MMMM Do YYYY') + ' at ' + full_date(new Date(page.updated), 'H:mm')
     != page.content
   // include _comments 
+  footer(itemscope, itemtype='https://schema.org/WPFooter')
+    include _footer
 else if is_post()
   article.full
     h1(itemprop='headline')= page.title
