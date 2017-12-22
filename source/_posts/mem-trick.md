@@ -23,7 +23,7 @@ Thông thường khi nghĩ đến tính trung bình cộng, bạn cho rằng đ�
 Bạn cũng có thể dễ dàng dính tràn số với những đoạn code kiểu này - mà mình nghĩ chắc cũng không ít người vẫn làm thế :))
 
 ```C
-for(int i = 0; i < lenght; i++) {
+for(int i = 0; i < length; i++) {
     sum += array[i];
 }
 ```
