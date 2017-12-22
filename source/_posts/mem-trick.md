@@ -40,7 +40,7 @@ Việc thực hiện phép cộng bừa bãi nhiều khi thực sự gây ra nh�
 
 Một biến đổi khá đơn giản nhưng đã tránh hoàn toàn được vấn đề `overflow` nói trên. Chú ý rằng với giả thiết đầu vào là `l nhỏ hơn bằng r` ta luôn có (r - l) nằm trong range cho phép của kiểu mẫu, đơn giản là vì bạn đã load được `r` vào bộ nhớ thì chẳng có lý do gì không load được (r - l) < r vào đó cả :).
 
-Tổng quát lên một chú ta có với giả thiết `X1 < X2 < ... < Xn`
+Tổng quát lên một chút ta có với giả thiết `X1 < X2 < ... < Xn`
 
 ```
 {X1 + X2 + ... + Xn}/n
