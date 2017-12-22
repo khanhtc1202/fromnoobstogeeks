@@ -18,9 +18,9 @@ Không còn gì để nói thêm ngoài tuyệt vời :joy:
 
 Đoạn code trên làm nhiệm vụ tính `trung bình cộng của 2 số l và r` với giả thiết đầu vào là `l nhỏ hơn hoặc bằng r`
 
-Thông thường khi nghĩ đến tính trung bình cộng, bạn cho rằng đơn giản chỉ cần **cộng chúng lại và chia cho số số hạng** nhưng chính phần đơn giản đó khiến cho chúng ta nhiều lúc mất ngủ đến mấy ngày (cái này gợi nhớ đến dấu `;` thần thánh hoặc `}` mà chắc ai cũng đã dính rồi :joy: ).
+Thông thường khi nghĩ đến tính trung bình cộng, bạn cho rằng đơn giản chỉ cần **cộng chúng lại và chia cho số số hạng** nhưng chính phần đơn giản đó khiến cho chúng ta nhiều lúc [`mất ngủ đến mấy ngày :)`](https://i.ytimg.com/vi/Uvw0xNSj0H0/maxresdefault.jpg) (cái này gợi nhớ đến dấu `;` thần thánh hoặc `}` mà chắc ai cũng đã dính rồi :joy: ).
 
-Bạn cũng có thể dễ dàng dính tràn số với những đoạn code kiểu này - mà mình nghĩ chắc cũng không ít người vẫn làm thế :))
+Bạn cũng có thể dễ dàng dính tràn số với những đoạn code kiểu này - mà mình nghĩ chắc cũng không ít người vẫn làm thế :)) bao gồm cả người đang viết bài này :'(
 
 ```C
 for(int i = 0; i < length; i++) {
