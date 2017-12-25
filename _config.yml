@@ -81,6 +81,6 @@ disqus_shortname: fromnoobstogeeks
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/khanhtc1202/fromnoobstogeeks.git
+  repo: git@github.com/khanhtc1202/fromnoobstogeeks.git
   branch: master
   ignore_hidden: false
