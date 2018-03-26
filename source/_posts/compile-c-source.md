@@ -6,7 +6,7 @@ tags:
 
 After hard coding your program hour by hour (sometime, it come year by year :) ), one of the most uncomfortable time is compile it into executable file. As usually, we are going to compile a program by the most hard way to do it, just because it will make us knows that in some case, `gcc` is really a hero :))
 
-The post content about compiling an C program by manual way. In that program, we use an external lib, defined by yourself.
+The post's content is about compiling an C program by manual way. In that program, we use an external lib, defined by yourself.
 
 ## Using static libraries
 
@@ -73,7 +73,7 @@ Note: after the command create `.o` file be completed, we don't need header file
 
 So if we are going to use an external lib, we just download header files, include it into source code. In compile time, we download binary file of libs, and give it to `gcc` to link libs in linking step.
 
-The above is the way we make an compiled executable file with static libs, the executable itself can run, no need any other libs link to it in run time. We also have the way to make this with dynamic libs (mean that in runtime, the exec file call some external libs to get implementation of needed funtions). Both of strategies have advantages and disadvantages, so just think about it before compile your program.
+The above is the way we make an compiled executable file with static libs, the executable itself can run, no need any other libs link to it in run time. We also have the way to make this with dynamic libs (mean that in runtime, the exec file call some external libs to get implementation of needed funtions). Both of strategies have advantages and disadvantages points, so just think about it before compile your program.
 
 Source code sample go [here](https://github.com/khanhtc1202/c-advance/tree/master/tricks/libs-build).
 
