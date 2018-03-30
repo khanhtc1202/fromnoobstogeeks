@@ -129,4 +129,4 @@ https://github.com/khanhtc1202/animu-crawling-system
 
 Bạn nào ngại cài lại thì down chung từ server của mình cũng được :))) 
 
-Nhân đây mình còn rất nhiều cuối tuần rảnh rỗi :)) bạn nào có ý tưởng gì hay sẵn sàng chia sẻ thì mình xin một chân ngồi hóng nhé :))).
+Nhân đây mình còn rất nhiều cuối tuần rảnh rỗi @@ còn hứng thì lúc nào cũng có :)) bạn nào có ý tưởng gì hay sẵn sàng chia sẻ thì mình xin một chân ngồi hóng nhé :))).
