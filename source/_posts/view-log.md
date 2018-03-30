@@ -63,7 +63,7 @@ Có vẻ đã get stream thành công :)) giờ gán nó cho data stream của r
 
 ![Imgur](https://i.imgur.com/LucItFe.png?1)
 
-Như đã thấy trong hình trên, stream data của response chưa bắt được event end :)) lý do vì stdout của process đang chạy lệnh tail vẫn chưa hoàn thành (vì nó là tail mà :) ). Như vậy nếu bây giò mình viết thêm gì đấy vào file log thì trên trình duyệt, nội dung của tab log mình đang xem cũng thay đổi luôn - quá tuyệt :)) thử nào...
+Như đã thấy trong hình trên, stream data của response chưa bắt được event end :)) lý do vì stdout của process đang chạy lệnh tail vẫn chưa hoàn thành (vì nó là tail mà :) ). Như vậy nếu bây giờ mình viết thêm gì đấy vào file log thì trên trình duyệt, nội dung của tab log mình đang xem cũng thay đổi luôn - quá tuyệt :)) thử nào...
 
 ![Imgur](https://media.giphy.com/media/cm1SRZW8XOEGFZNy8V/giphy.gif)
 
