@@ -10,7 +10,7 @@ Do là cái hệ thống viết chơi bời trong 2 ngày nghỉ nên nó thiế
 
 Ý tưởng giải quyết vấn đề của mình như sau: Nếu có thể serve text data trong log file như data thông thường và gửi chúng trong response trả về thì vấn đề cần giải quyết chỉ là `làm cách nào để lấy được log data dưới dạng stream và dán nó lên stream data của response` - giải quyết được vấn đề này thì có thể đọc log qua http thông qua 1 request đơn giản lên server rồi. (Lý do phải đọc log data từ log file dưới dạng stream là do log file lớn đọc trong 1 lần thì tốn ram quá, nhất là với cái server dùng ké của mình @@)
 
-Từ đó mình nghĩ các bước thực hiện như sau (do mình đã viết hết xong khung cho hệ thống từ trước nên bước viết endpoint mới là dễ dàng thực hiện nên không được list ra ở đây):
+Từ đó mình nghĩ các bước thực hiện như sau (do mình đã viết hết xong khung cho hệ thống từ trước nên bước viết endpoint mới là dễ dàng thực hiện và không được list ra ở đây):
 1. Tìm cách đọc stream data từ log file (ở đây mình nghĩ ngay đến `tail` :)) )
 2. Tìm cách gọi được stream đó từ source code ( server của hệ thống mình viết bằng nodejs )
 3. Gắn stream data đọc được lên stream data của response trả về.
