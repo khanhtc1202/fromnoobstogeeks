@@ -67,7 +67,7 @@ Như đã thấy trong hình trên, stream data của response chưa bắt đư�
 
 ![Imgur](https://media.giphy.com/media/cm1SRZW8XOEGFZNy8V/giphy.gif)
 
-Bản uncensored có thể xem tại [đây](https://youtu.be/41XIFcZKfEU).
+Bản `uncensored` có thể xem tại [đây](https://youtu.be/41XIFcZKfEU).
 
 Done!!! :)))) vậy là đã hoàn thành việc view log thông qua http, lại còn realtime nữa chứ :))))...
 
