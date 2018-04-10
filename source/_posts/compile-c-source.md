@@ -1,12 +1,17 @@
 ---
 title: Compile C program in manual way
 date: 2018-03-26 01:09:47
-tags:
+tags: 
+- compiler
+- manual
+- C/C++
 ---
 
 After hard coding your program hour by hour (sometime, it becomes year by year :) ), one of the most uncomfortable time is compiling it into executable file. As usually, we are going to compile a program by the hardest way to do it, just because it will make us knows that in some case, `gcc` is really a hero :))
 
 The post's content is about compiling a C program by manual way. In that program, we use an external lib, defined by yourself.
+
+<!-- more -->
 
 ## Using static libraries
 

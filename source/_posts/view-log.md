@@ -1,12 +1,17 @@
 ---
 title: Log Viewer via HTTP
 date: 2018-03-30 17:17:44
-tags:
+tags: 
+- manual
+- networks
+- nodejs
 ---
 
 Nhân một cuối tuần rảnh rỗi cao hứng nào đấy, mình đã build [một hệ thống nhỏ](http://fromnoobstogeeks.com:7001/videos) - mục đích chính để nó giúp mình `clone tự động anime mới` từ các trang mình đã thu thập rss (phần vì mình lười down từng tập, phần do đợt này mình hay quên nên @@). 
 
 Do là cái hệ thống viết chơi bời trong 2 ngày nghỉ nên nó thiếu đủ thứ m(- -)m... Lúc đầu, mình chỉ tập trung vào viết cho nó chạy, nhưng thời gian đầu - do một số lý do khó nói - mà nó chết sập liên tục @@ mình bắt đầu nghĩ đến logging, tất nhiên là log ra file thôi...Sau đấy một thời gian khi đã chạy khá ổn định, dần dần bản thân việc `mò vào server để mở file log ra đọc` mình cũng lười nốt m(- -)m nên bắt đầu nghĩ xem có cách nào đơn giản (không phải cài hay dùng thêm dịch vụ ngoài nào) mà có thể giúp xem luôn log file ở server từ trình duyệt không :)) 
+
+<!-- more -->
 
 Ý tưởng giải quyết vấn đề của mình như sau: Nếu có thể serve text data trong log file như data thông thường và gửi chúng trong response trả về thì vấn đề cần giải quyết chỉ là `làm cách nào để lấy được log data dưới dạng stream và dán nó lên stream data của response` - giải quyết được vấn đề này thì có thể đọc log qua http thông qua 1 request đơn giản lên server rồi. (Lý do phải đọc log data từ log file dưới dạng stream là do log file lớn đọc trong 1 lần thì tốn ram quá, nhất là với cái server dùng ké của mình @@)
 
