@@ -4,7 +4,7 @@
 
 # Site
 title: From Noobs To Geeks
-subtitle:
+subtitle: from noobs to geeks
 description: My name is khanhtc and I'm a programmer. No matter how much I learned, I am just a noob and keep learning by myself to become a geek.
 author: khanhtc
 language: en_US
@@ -76,7 +76,7 @@ pagination_dir: page
 theme: next
 
 # Comment
-disqus_shortname: fromnoobstogeeks
+# disqus_shortname: fromnoobstogeeks
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
