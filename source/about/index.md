@@ -12,4 +12,6 @@ My favorite quotes...
 
 > No one can see your future, only its possibilities. You have such a capacity for goodness. You always excelled, but not because you craved success but because of your fear of failure. 
 
+> ‘hope’ is not a strategy.
+
 To be continued...
