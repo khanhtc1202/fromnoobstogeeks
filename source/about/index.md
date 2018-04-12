@@ -8,6 +8,8 @@ date: 2017-12-18 15:35:35
 
 ## About my mindset
 
-My favorite quote...
+My favorite quotes...
 
 > No one can see your future, only its possibilities. You have such a capacity for goodness. You always excelled, but not because you craved success but because of your fear of failure. 
+
+To be continued...
