@@ -6,7 +6,7 @@ tags:
 - react
 ---
 
-Mình được tuyển về làm java dev nhưng do số nhọ, từ khi đi làm đến giờ số ngày dev java của mình chắc ít hơn đầu ngón tay. Bị quăng qua lại làm từ python, ruby, clojure, golang,...đến giờ thì cái gì đến cũng phải đến, mình bị dí sang làm react trong một dự án mới. Mình vốn cực kì noob frontend app, nên mấy khi nhận được cụm `flux architecture` trong một buổi họp nọ, mình nhận ra ngay đấy là cứu cánh duy nhất của mình ( ngoài architecture ra thì mình không đặc biệt quan tâm cái gì lắm :)) ). Sau vài giờ google thì dù tìm lòi mắt mình cũng `không thấy cái sample nào tử tế hoặc đủ để noobs như mình hiểu` nên quyết định tự làm 1 cái, dù sao thì từ hướng architecture, flux cũng khá là thú vị.
+Mình được tuyển về làm java dev nhưng do số nhọ, từ khi đi làm đến giờ số ngày dev java của mình chắc ít hơn đầu ngón tay. Bị quăng qua lại làm từ python, ruby, clojure, golang,...đến giờ thì cái gì đến cũng phải đến, mình bị dí sang làm react trong một dự án mới. Mình vốn cực kì noob frontend app, nên khi nhận được cụm `flux architecture` trong một buổi họp nọ, mình nhận ra ngay đấy là cứu cánh duy nhất của mình ( ngoài architecture ra thì mình không đặc biệt quan tâm cái gì lắm :)) ). Sau vài giờ google thì dù tìm lòi mắt mình cũng `không thấy cái sample nào tử tế hoặc đủ để noobs như mình hiểu` nên quyết định tự làm 1 cái, dù sao thì từ hướng architecture, flux cũng khá là thú vị.
 
 <!-- more -->
 
