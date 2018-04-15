@@ -123,7 +123,7 @@ export const search = (): SearchAction => {
 };
 ```
 
-Chú ý 1 Action bắt buộc có trường type như sau ( lý do thì ở [đây](https://fromnoobstogeeks.com/2018/04/15/flux-arch/#implement-reducer) ) 
+Chú ý 1 Action bắt buộc có trường type như sau ( lý do thì ở [đây](https://fromnoobstogeeks.com/2018/04/15/flux-arch/#Implement-reducer) ) 
 ```typescript
 type SearchAction = {
     type: "SEARCH";
