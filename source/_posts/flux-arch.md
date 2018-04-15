@@ -1,5 +1,5 @@
 ---
-title: A Sample Flux Architecture
+title: A Sample App for Flux Architecture
 date: 2018-04-15 20:20:57
 tags:
 - architecture
