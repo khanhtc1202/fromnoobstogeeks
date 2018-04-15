@@ -196,7 +196,7 @@ Chú ý State struct được map với kết quả trả về của `combieRedu
 
 ### Store và Index.tsx
 
-./store.js
+./store.ts
 ```typescript
 import { applyMiddleware, createStore } from 'redux';
 import { createLogger } from 'redux-logger';
