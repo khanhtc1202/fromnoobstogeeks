@@ -26,7 +26,7 @@ Chúng ta đi implement một sample app bao gồm 1 search box nhập từ kho�
 
 Một vài điểm chú ý mình muốn nhắc lại trước khi bắt tay vào design 
 
-1. View là tập hợp của các components!!!
+1. View là tập hợp của các components!!! Component nên tập trung vào chức năng, không nên tập trung vào giao diện.
 2. Các component được define tuỳ ý bạn, tuy nhiên tuyệt đối không nên define 1 component lớn nhiều logic ( nếu lo lắng về việc view bị vụn nhiều component thì đọc 3. )
 3. Dữ liệu của cả trang define thông qua State của trang đó. Sau mỗi action, State của trang được cập nhật đến trạng thái mới ( điều này đảm bảo view đồng nhất tránh bị thay đổi do trigger ở nhiều model khác nhau | lưu ý tránh nhầm lẫn với State của component )
 4. Chỉ có các Action nắm biết cách thay đổi dữ liệu trên view, không được thay đổi bằng bất cứ phương pháp nào khác, kết quả sau mỗi action đều là State mới của trang ( điều này bổ sung cho 3. )
