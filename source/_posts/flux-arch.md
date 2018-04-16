@@ -232,5 +232,5 @@ Chú ý module được import vào tại đây là `containers` và `store`.
 Ok DONE! Mục tiêu lúc đầu do cay cú vì không tìm được cái sample nào chi tiết cho flux nên mình viết bài này với mode noobs như mình đọc xong cũng làm được :)). Nhưng nghĩ lại thì tut với sample thì vẫn chỉ là sample thôi, muốn hiểu thì cứ clone về nghịch là nhanh nhất :))
 
 P/s:
-- Project struct trên là thành quả 2 ngày cãi nhau với thanh niên ngồi cạnh mình ở công ty :))
+- Project struct trên là thành quả 2 ngày cãi nhau với thanh niên ngồi cạnh mình ở công ty, thanks to him :))
 - Sếp :v anh có vô tình đọc được cái đống này thì xin tha cho em, chỉ làm frontend app nốt tháng này không em xin quit sớm :'( .
