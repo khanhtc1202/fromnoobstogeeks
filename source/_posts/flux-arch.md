@@ -37,15 +37,15 @@ Xem hình dưới để có hình dung tổng quát của cấu trúc khi đảm
 
 Dựa theo tư tưởng bên trên, ta thiết kế một project structure như sau:
 
-Các `Component` phát sinh event, được xử lý bằng các method ( đã được khai báo như là props (properties) của component ). 
+- Các `Component` phát sinh event, được xử lý bằng các method ( đã được khai báo như là props (properties) của component ). 
 
-Các `Action` ( có vai trò như các callback ) định nghĩa phương thức thay đổi dữ liệu trên trang, kết quả trả về là state mới.
+- Các `Action` ( có vai trò như các callback ) định nghĩa phương thức thay đổi dữ liệu trên trang, kết quả trả về là state mới.
 
-Các `Container` có 2 nhiện vụ chính là: `Bind data từ State của trang sang props của Component` và `Tuỳ theo method đã declare trong props của Component, ném (dispatch) các Action thích hợp`. Nhiệm vụ này thực hiện thông qua 2 method chính là `mapStateToProps` và `mapDispatchToProps`.
+- Các `Container` có 2 nhiện vụ chính là: `Bind data từ State của trang sang props của Component` và `Tuỳ theo method đã declare trong props của Component, ném (dispatch) các Action thích hợp`. Nhiệm vụ này thực hiện thông qua 2 method chính là `mapStateToProps` và `mapDispatchToProps`.
 
-Các `Reducer` là nơi kiểm soát giá trị `input cho State mới`. Method `combineReducers` merge output của các reducer gán làm giá trị mới cho State.
+- Các `Reducer` là nơi kiểm soát giá trị `input cho State mới`. Method `combineReducers` merge output của các reducer gán làm giá trị mới cho State.
 
-`state.js` define State struct của page app & `store.js` là nơi gom đống reducers bên trên lại, quản lý State của toàn bộ page đó.
+- `state.js` define State struct của page app & `store.js` là nơi gom đống reducers bên trên lại, quản lý State của toàn bộ page đó.
 
 > Những điều trên được đảm bảo bởi `redux` và các method của libs này. Trong ví dụ minh hoạ mình dùng libs `react-redux` để implement.
 
