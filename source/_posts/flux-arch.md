@@ -229,6 +229,8 @@ ReactDOM.render(
 
 Chú ý module được import vào tại đây là `containers` và `store`.
 
+Về `Provider` có thể tìm thấy giải thích chi tiết tại [đây](https://github.com/reactjs/react-redux/blob/master/docs/api.md#provider-store) hoặc một câu hỏi khá hay để hiểu thêm về provider có thể tìm thấy tại [đây](https://github.com/reactjs/react-redux/issues/719).
+
 Ok DONE! Mục tiêu lúc đầu do cay cú vì không tìm được cái sample nào chi tiết cho flux nên mình viết bài này với mode noobs như mình đọc xong cũng làm được :)). Nhưng nghĩ lại thì tut với sample thì vẫn chỉ là sample thôi, muốn hiểu thì cứ clone về nghịch là nhanh nhất :))
 
 P/s:
