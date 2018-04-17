@@ -14,4 +14,8 @@ My favorite quotes...
 
 > ‘hope’ is not a strategy.
 
+## My favorite book
+
+- [The Subtle Art of Not Giving a F*ck](https://www.amazon.co.jp/Subtle-Art-Not-Giving-Counterintuitive/dp/0062457713/ref=sr_1_1?s=english-books&ie=UTF8&qid=1523979651&sr=1-1&keywords=the+subtle+art+of+not+giving)
+
 To be continued...
