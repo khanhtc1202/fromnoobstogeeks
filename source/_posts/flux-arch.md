@@ -220,7 +220,10 @@ import SearchResults from "./containers/SearchResults";
 
 ReactDOM.render(
   <Provider store={store}>
-    ...
+    <div>
+        <SearchBox/>
+        <SearchResults/>
+    </div>
   </Provider>,
   document.getElementById("app")
 );
