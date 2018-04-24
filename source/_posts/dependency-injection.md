@@ -8,7 +8,7 @@ As a developer, we write code day by day, try to handle many things, put all the
 
 ![Imgur](https://i.imgur.com/U1ahhBd.jpg)
 
-
+Almost of us know about the SOLID principle, some of us understood and rare of us thing about it day by day :)) We all like something fancy like 
 
 ### Contructor Injection
 
