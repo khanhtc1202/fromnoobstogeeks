@@ -3,12 +3,7 @@ title: Dependency Injection in a null shell
 date: 2018-03-30 13:13:40
 tags:
 ---
-<intro go here>
 
-
-<<<<<<< HEAD
-
-=======
 ### Contructor Injection và Setter Injection
 
 ### Field Injection 
@@ -20,4 +15,3 @@ Các này mình thấy được dùng khi dev bằng java spring nhưng chưa c
 ### Injection với DI Container
 
 Cái này để dành bài sau viết :)) Viết vào đây nữa thì dài quá rồi :))).
->>>>>>> struct
