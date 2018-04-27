@@ -18,6 +18,8 @@ Cái này thì mình thấy trên mạng sau vài phút googling thì có rất 
 
 Ngoài những bài bên trên ra mình thấy có 1 bài dịch trên kipalog khá hay về flux, có thể tìm thấy tại [đây](https://kipalog.com/posts/Huong-dan-va-giai-thich-Flux-bang-hinh-ve).
 
+Cập nhật thêm một bài so sánh về flux architecture vs mvc architecture mình cảm thấy rất hữu ích tại [đây](http://jonnyreeves.co.uk/2016/redux-middleware/).
+
 ## Implement Flux
 
 Chúng ta đi implement một sample app bao gồm 1 search box nhập từ khoá, kết quả tìm được in lên trang như sau. ( mình noob application nên nó chỉ `đẹp` được đến vậy là hết sức rồi :)) )
