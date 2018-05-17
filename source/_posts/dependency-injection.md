@@ -143,10 +143,10 @@ sd := &Definition{
 }
 container.Register(sd)
 
-...
+... // in main
 car := container.Get("CarWithRunByRiceEngine")
 ```
 
-We can make container store more than just the way to create new object. For example we can use DI Container for storing object itself (something like Singleton Pattern implemented inside the container), sample code for this go [here](https://gist.github.com/khanhtc1202/a8429ffdcbd24fad41d857609e3083fb).
+We can make container store more than just the way to create new object. For example we can use DI Container for storing object itself (something like Singleton Pattern implemented inside the container), sample code for this go [here](https://gist.github.com/khanhtc1202/88411fb3e33f7dd4c5e0b11618b87016).
 
 to be continue...
