@@ -1,5 +1,5 @@
 ---
-title: Dependency Injection in a null shell
+title: Dependency Injection in the nutshell
 date: 2018-04-25 13:13:40
 tags:
 ---
@@ -16,10 +16,10 @@ with `IEngine` is an interface of engine, `Car` is car class that use `IEngine`
 ```golang
 type IEngine interface {
     Start()
-}
 ```
 
 ### Contructor Injection
+}
 
 ```golang
 type Car struct {
@@ -85,7 +85,9 @@ There is some where in your application, they call it's [Composition Root](http:
 
 > A Composition Root is a (preferably) unique location in an application where modules are composed together.
 
-In there, all of the object we declared throw the application will be instanced and be composed together and act the application logic we wrote.
+It as close as possible to the application's entry point. In there, all of the object we declared throw the application will be instanced and be composed together and act the application logic we wrote.
+
+In console application, it should be placed at `main`. But on another way, it's better to make the `main` method as light as possible, so we can give that mission to another guy. The bellow sample, we going to give this mission to the guy name `DI Container`
 
 ### Injection with DI Container
 
