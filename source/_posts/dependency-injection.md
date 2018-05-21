@@ -15,9 +15,9 @@ As a developer, we write code day by day, try to handle many things, put all the
 
 Almost of us know about the SOLID principle, some of us understood and rare of us thing about it while we write down our code (I'm not on this group T.T ). We all pay our attention on something like design pattern and think about it as the easiest way to know how good your code are, but if we focus on that think to much, the thing we created will become more mess than you think ( in the case you can finish what you started ).
 
-Our life will get easier if we put our attention on the right way it should be! Good code mean easier to maintain & easier to `read`, so if you want to make it easier to read, just break it into piece. But when we have a heap of piece, create application logic like put them together and this made it depen together.
+Our life will get easier if we put our attention on the right way it should be! Good code mean easier to maintain & easier to `read`, so if you want to make it easier to read, just break it into piece. But when we have a heap of piece, create application logic like put them together and this makes them depend on each other.
 
-For example, in the bellow code block, we call `Car` class depen on `Engine` class.
+For example, in the below code block, we call `Car` class depend on `Engine` class.
 
 ```golang
 type Car struct {
@@ -25,7 +25,7 @@ type Car struct {
 }
 ```
 
-That easy pattern appear so many time in our application. Every seem to be okay, but when we start writing logic for `Car` class that have relation with `Engine of the Car`, all the change on `Engine` class can make `Car` class logic be broken. The same thing when we use externals libraries, if your application directorly depen on the outside modules, it will be broken when the libraries get updated.
+This pattern appear so many time in our application. Everything seem to be okay, but when we start writing logic of `Car` class that have relation with `Engine of the Car`, all the change on `Engine` class can make `Car` class logic be broken. The same thing when we use external libraries, if your application depends directly on the external modules, it will be corrupted when those libraries are updated.
 
 To avoid that dead end, we have a very useful tool named `Dependencies Injection`. Instead of directly inject class to class, it's better to inject just the interface of inject class to the host class (we have many ways to do this strategy).
 
