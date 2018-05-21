@@ -36,6 +36,7 @@ with `IEngine` is an interface of engine, `Car` is car class that use `IEngine`
 ```golang
 type IEngine interface {
     Start()
+}
 ```
 
 ### Contructor Injection
