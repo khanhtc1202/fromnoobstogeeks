@@ -1,6 +1,6 @@
 ---
-title: Dependency Injection in the nutshell
-date: 2018-04-25 13:13:40
+title: Dependency Injection in a nutshell
+date: 2018-04-21 13:13:40
 tags:
 - architecture
 - design
