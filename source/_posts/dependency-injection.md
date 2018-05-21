@@ -107,9 +107,9 @@ There is some where in your application, they call it's [Composition Root](http:
 
 > A Composition Root is a (preferably) unique location in an application where modules are composed together.
 
-It as close as possible to the application's entry point. In there, all of the object we declared throw the application will be instanced and be composed together and act the application logic we wrote.
+It as close as possible to the application's entry point. In there, all of the object we declared through the application will be instanced and be composed together and act the application logic we wrote.
 
-In console application, it should be placed at `main`. But on another way, it's better to make the `main` method as light as possible, so we can give that mission to another guy. The bellow sample, we going to give this mission to the guy name `DI Container`
+In console application, it should be placed at `main`. But on another way, it's better to make the `main` method as lightweight as possible, so we can give that mission to another guy. The below sample, we going to give this mission to the guy name `DI Container`.
 
 ### Injection with DI Container
 
