@@ -13,7 +13,7 @@ As a developer, we write code day by day, try to handle many things, put all the
 
 ![Imgur](https://i.imgur.com/U1ahhBd.jpg)
 
-Almost of us know about the SOLID principle, some of us understood and rare of us thing about it while we write down our code (I'm not on this group T.T ). We all pay our attention on something like design pattern and think about it as the easiest way to know how good your code are, but if we focus on that think to much, the thing we created will become more mess than you think ( in the case you can finish what you started ).
+Almost of us know about the SOLID principle, some of us understood and rare of us thing about it while we write down our code (I'm not on this group T.T ). We all pay our attention on something like design pattern and think about it as the easiest way to know how good your code are, but if we focus on that think too much, the thing we created will become more messed than you think (in the case you can finish what you started).
 
 Our life will get easier if we put our attention on the right way it should be! Good code mean easier to maintain & easier to `read`, so if you want to make it easier to read, just break it into piece. But when we have a heap of piece, create application logic like put them together and this makes them depend on each other.
 
