@@ -80,6 +80,8 @@ car.SetEngine(runByRiceEngine)
 
 ### Interface Injection
 
+In some opinion, they think that it's better if the way we inject class into another class is an interface itself. This implementation familiar with property injection, but the inject method isn't setter method. The object class we inject into itself implements the injectable forms on it.
+
 ```golang
 type IEngineMountable interface {
     Mount(engine IEngine)
