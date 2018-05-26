@@ -7,5 +7,5 @@ tags:
 - network
 ---
 
-
+![X-Server](https://i.imgur.com/B86hSln.png)
 
