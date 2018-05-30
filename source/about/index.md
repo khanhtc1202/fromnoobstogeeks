@@ -10,7 +10,7 @@ date: 2017-12-18 15:35:35
 
 My favorite quotes...
 
-> No one can see your future, only its possibilities. You have such a capacity for goodness. You always excelled, but not because you craved success but because of your fear of failure. 
+> If you’re thinking without writing, you only think you’re thinking.
 
 > ‘hope’ is not a strategy.
 
