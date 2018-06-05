@@ -205,7 +205,7 @@ Những ninja giỏi biết cách giấu hàng tá logic vào trong code của h
 
 __Kết hợp nhiều logic vào trong cùng một chỗ giúp bảo vệ code của bạn khỏi nguy cơ bị tái sử dụng.__
 
-Tưởng tượng một thằng ngốc nào đó trong team muốn sử dụng code của một ninja như bạn, ví dụ như hàm `validateEmail(email)` bên trên. Sau vài giờ thiền định và nhận ra function làm được còn nhiều hơn cả những gì một gã ngốc như anh ta mong đợi (kiểm tra tính đúng đắn của email), nghiễm nhiên, anh ta sẽ bỏ cuộc và không có ý định làm phiền đến khoảng thời gian thiền định của bạn.
+Tưởng tượng một thằng ngốc nào đó trong team muốn sử dụng code của một ninja như bạn, ví dụ như hàm `validateEmail(email)` bên trên. Sau vài giờ thiền định và nhận ra function bạn viết làm được còn nhiều hơn cả những gì một gã ngốc như anh ta mong đợi (kiểm tra tính đúng đắn của email), nghiễm nhiên, anh ta sẽ bỏ cuộc và không có ý định làm phiền đến khoảng thời gian thiền định của bạn.
 
 # TL;DR
 
