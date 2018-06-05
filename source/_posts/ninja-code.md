@@ -26,7 +26,7 @@ Chúng ta sẽ cùng điểm qua những giáo lý chủ đạo của đạo ph�
 
 ## Ngắn gọn là đích đến của sự thông tuệ
 
-Code của bạn càng ngắn gọn, bạn càng thông minh hơn thằng ngồi ở block bên cạnh.
+Code của bạn __càng ngắn gọn, bạn càng thông minh__ hơn thằng ngồi ở block bên cạnh.
 
 Lấy ví dụ, tất cả chúng ta từ khi bắt đầu học lập tình đều biết đến phép toán `?` và cách nó biến đổi biểu thức điều kiện if về dạng oneline kì diệu như thế nào.
 
