@@ -22,7 +22,7 @@ Chúng ta sẽ cùng điểm qua những giáo lý chủ đạo của đạo ph�
 
 > Rất nhiều môn sinh theo ninja đạo. Chỉ một số ít thành công.
 >
-> -- <cite>Confucius</cite>
+> <cite>Confucius</cite>
 
 ## Ngắn gọn là đích đến của sự thông tuệ
 
@@ -45,7 +45,7 @@ Và rồi đến khi không thể tìm ra lời giải thích thoả đáng cho 
 
 > Người Dao ẩn mình bằng sự im lặng. Cái gì người Dao đã bắt đầu, chỉ người Dao biết cách kết thúc nó.
 >
-> -- <cite>Laozi (Tao Te Ching)</cite>
+> <cite>Laozi (Tao Te Ching)</cite>
 
 Đối với một ninja, không gì quan trọng hơn là kĩ năng ẩn mình. Vậy kĩ năng ẩn mình của một ninja đắc đạo thể hiện ở đâu? Nó thể hiện từ những thứ nhỏ nhất như là tên biến...
 
@@ -71,12 +71,12 @@ Phải là một ninja đắc đạo hoặc là có trực giác tốt mới có
 
 ## Trừu tượng là mục tiêu
 
-> The great square is cornerless </br>
-> The great vessel is last complete, </br>
-> The great note is rarified sound, </br>
+> The great square is cornerless
+> The great vessel is last complete,
+> The great note is rarified sound,
 > The great image has no form.
 >
-> -- <cite>Laozi (Tao Te Ching)</cite>
+> <cite>Laozi (Tao Te Ching)</cite>
 
 Khi đặt tên biến, trong hàng trăm lựa chọn, hay chọn cái tên trừu tượng nhất. Giống như obj, data, value, item, elem,...etc.
 
@@ -104,7 +104,7 @@ Một cách đơn giản, hãy __sử dụng những cặp tên dễ nhầm lẫ
 
 > Rất khó để có thể bắt được con mèo đen trong một căn phòng tối. Nhất là khi trong đó chẳng có con mèo nào.
 >
-> -- <cite>Confucius</cite>
+> <cite>Confucius</cite>
 
 Sử dụng những từ gần nghĩa là một cách khẳng định khả năng suy nghĩ linh hoạt và sáng tạo của một ninja thượng đẳng. Nó cũng làm cho code của team trở nên thú vị hơn rất nhiều :))
 
@@ -120,10 +120,10 @@ Ví dụ, hàm `printPage(page)` sẽ sử dụng máy in, in trang hiện tại
 
 ## Tái sử dụng tên (biến, hàm,...)
 
-> Once the whole is divided, the parts need names. </br>
+> Once the whole is divided, the parts need names.
 > There are already enough names. One must know when to stop.
 >
-> -- <cite>Laozi (Tao Te Ching)</cite>
+> <cite>Laozi (Tao Te Ching)</cite>
 
 Một ninja giỏi biết cách tăng tối đa hiệu quả sử dụng bộ nhớ bằng cách __chỉ tạo biến mới khi thực sự cần thiết__!
 
@@ -153,10 +153,10 @@ Thật vậy, một cái gì đó được naming: `super...`, `mega...`, `nice.
 
 ## Chồng chéo các biến bên ngoài
 
-> When in the light, can’t see anything in the darkness. </br>
+> When in the light, can’t see anything in the darkness.
 > When in the darkness, can see everything in the light.
 >
-> -- <cite>Guan Yin Zi</cite>
+> <cite>Guan Yin Zi</cite>
 
 Sử dụng cùng một tên biến cho biến ở trong và ngoài một scope nào đó. Ví dụ 
 
@@ -193,7 +193,7 @@ Cho đến khi môn sinh trẻ tuổi kia viết những thứ đại loại nh�
 
 > The great Tao flows everywhere, both to the left and to the right.
 >
-> -- <cite>Laozi (Tao Te Ching)</cite>
+> <cite>Laozi (Tao Te Ching)</cite>
 
 Đừng giới hạn chức năng function của bạn chỉ bởi vì cái tên của nó. Hãy để cho nó làm được nhiều hơn thế.
 
