@@ -12,7 +12,7 @@ Nếu coding giống như một trận chiến giữa programer và problem cầ
 
 > Chú ý: Bài viết lược dịch từ [đây](https://javascript.info/ninja-code). Đối với tôi, không có từ nào nhận xét tốt hơn cho bản gốc của bài viết này ngoài 2 chữ `tuyệt vời` :)).
 
-Trong khuôn khổ bài viết, đạo này được naming là `ninja đạo` - người theo đạo được naming là các ninja (ninja đắc đạo là những ninja tuân thủ nghiêm ngặt theo những đạo lý được liệt kê trong bài viết này).
+Trong khuôn khổ bài viết, đạo này được naming là __ninja đạo__ - người theo đạo được naming là các ninja (ninja đắc đạo là những ninja tuân thủ nghiêm ngặt theo những đạo lý được liệt kê trong bài viết này).
 
 # Đạo lý trong ninja đạo
 
@@ -88,17 +88,17 @@ Nhưng làm thế nào khi cái tên `data` đã bị một ninja khác trong te
 
 Một môn sinh trẻ tuổi có thể ban đầu cảm thấy lạc lõng và tự hỏi kĩ năng đặt tên biến như trên có thực sự giúp ích cho một ninja? Hãy tự tin và nói với anh ta "chắc chắn rồi!".
 
-Thật vậy, những cái tên trên thực sự vẫn mang trong nó ý nghĩa: `str` thể hiện biến đó đang lưu một chuỗi gì đó,...Nhưng khi có ai đó bên ngoài thử cố gắng hiểu đoạn code của bạn, họ sẽ bất ngờ nhận ra cái tên đó chẳng mang một ý nghĩa cụ thể nào cả :)) họ sẽ phải từ bỏ việc đào bới đoạn code và như vậy biến cùng với logic của bạn được `an toàn` là của bạn.
+Thật vậy, những cái tên trên thực sự vẫn mang trong nó ý nghĩa: `str` thể hiện biến đó đang lưu một chuỗi gì đó,...Nhưng khi có ai đó bên ngoài thử cố gắng hiểu đoạn code của bạn, họ sẽ bất ngờ nhận ra cái tên đó chẳng mang một ý nghĩa cụ thể nào cả :)) họ sẽ phải từ bỏ việc đào bới đoạn code và như vậy biến cùng với logic của bạn được __an toàn__ là của bạn.
 
 Không có cách nào để thực sự hiểu được đoạn code của bạn - một ninja thượng đẳng - ngoại trừ việc dành nhiều thời gian cho nó và phải thực sự tĩnh tâm :)) Bạn sẽ bất ngờ về khả năng đọc code của môn sinh mới sau vài tháng luyện tập.
 
-+ Vậy phải làm gì khi hầu hết những cái tên phía trên đều rất dễ bị một ninja khác trước bạn dùng mất? Đơn giản, chỉ cần `THÊM SỐ VÀO` : data1, data2, value3, str4,...etc.
++ Vậy phải làm gì khi hầu hết những cái tên phía trên đều rất dễ bị một ninja khác trước bạn dùng mất? Đơn giản, chỉ cần __THÊM SỐ VÀO__ : `data1`, `data2`, `value3`, `str4`,...etc.
 
 ## Kiên định
 
 Sự tập trung cũng là một trong những yếu tố phân định đẳng cấp của một ninja! Chỉ những ninja đã thực sự tập trung và kiên nhẫn mới đủ tư cách đi cùng những ninja thượng đẳng khác. Vậy làm cách nào để thử thách họ - những môn sinh non trẻ?
 
-Một cách đơn giản, hãy `sử dụng những cặp tên dễ nhầm lẫn đặt tên biến` như là `data` & `date`. Sau đó mix chúng lại với nhau! Sẽ không ai có thể nhanh chóng đọc được source code của bạn, và rồi khi có lỗi typo (lỗi đánh máy) Uhm...chúng ra sẽ còn kẹt ở đây khá lâu, một tách trà trước khi tiếp tục không phải một ý tưởng tồi...
+Một cách đơn giản, hãy __sử dụng những cặp tên dễ nhầm lẫn đặt tên biến__ như là `data` & `date`. Sau đó mix chúng lại với nhau! Sẽ không ai có thể nhanh chóng đọc được source code của bạn, và rồi khi có lỗi typo (lỗi đánh máy) Uhm...chúng ra sẽ còn kẹt ở đây khá lâu, một tách trà trước khi tiếp tục không phải một ý tưởng tồi...
 
 ## Tiền tố
 
@@ -114,7 +114,7 @@ Nhấn mạnh rằng có sự khác biệt tinh tế giữa các chức năng nh
 
 ...Và bây giờ là thời gian dành cho mẹo vặt!
 
-Nếu đã đặt `tiền tố khác nhau cho những chức năng tương tự nhau`, còn gì cản bước bạn không thực hiện nốt phần ngược lại `đặt tên tiền tố giống nhau cho những chức năng không mấy liên quan đến nhau`?
+Nếu đã __đặt tiền tố khác nhau cho những chức năng tương tự nhau__, còn gì cản bước bạn không thực hiện nốt phần ngược lại __đặt tên tiền tố giống nhau cho những chức năng không mấy liên quan đến nhau__?
 
 Ví dụ, hàm `printPage(page)` sẽ sử dụng máy in, in trang hiện tại. Và hàm `printText(text)` sẽ hiển thị văn bản lên màn hình. Hãy để môn sinh xa lạ khi nghĩ về chức năng `printMessage(message)` - một cái tên cùng tiền tố - “Nó đặt thông điệp ở đâu? Để máy in hoặc trên màn hình? ”. Sẽ là một môn sinh đầy triển vọng nếu anh ta có thể làm cho nó thực sự tỏa sáng bằng một ý tưởng: `printMessage(message)` nên xuất nó trong cửa sổ mới!
 
@@ -125,11 +125,11 @@ Ví dụ, hàm `printPage(page)` sẽ sử dụng máy in, in trang hiện tại
 >
 > -- <cite>Laozi (Tao Te Ching)</cite>
 
-Một ninja giỏi biết cách tăng tối đa hiệu quả sử dụng bộ nhớ bằng cách `chỉ tạo biến mới khi thực sự cần thiết`!
+Một ninja giỏi biết cách tăng tối đa hiệu quả sử dụng bộ nhớ bằng cách __chỉ tạo biến mới khi thực sự cần thiết__!
 
 Một mặt tích cực khác là bạn đỡ tốn thời gian naming cho biến mới. Do đó tốt hơn cả là sử dụng lại biến với những cái tên đã có, chỉ cần thay giá trị mới cho chúng.
 
-Một ninja thượng đẳng có thể viết ra những function hàng chục dòng logic mà chỉ sử dụng các biến được `truyền vào dưới dạng tham số`. Một môn sinh mới sẽ cảm thấy khó khăn để xác định được chính xác giá trị tại thời điểm hiện tại của một biến nào đó, hay biến đó đến từ đâu. Một người có trực giác yếu sẽ phải phân tích đoạn mã theo từng dòng, theo dõi sự thay đổi qua mỗi nhánh mã và sau cùng tuyệt vọng chạy thử đoạn mã trên giấy...
+Một ninja thượng đẳng có thể viết ra những function hàng chục dòng logic mà chỉ sử dụng các biến được __truyền vào dưới dạng tham số__. Một môn sinh mới sẽ cảm thấy khó khăn để xác định được chính xác giá trị tại thời điểm hiện tại của một biến nào đó, hay biến đó đến từ đâu. Một người có trực giác yếu sẽ phải phân tích đoạn mã theo từng dòng, theo dõi sự thay đổi qua mỗi nhánh mã và sau cùng tuyệt vọng chạy thử đoạn mã trên giấy...
 
 Một biến thể cao cấp của kĩ năng này là thử tráo (tạo clone) của biến đó bên trong vòng loop hoặc function. Những môn sinh yếu không hiểu rõ về những thứ như tham chiếu và tham trị thực sự sẽ phải quỳ gối trước những đoạn code như vậy.
 
@@ -149,7 +149,7 @@ Khi muốn làm việc với biến `elem` ở nửa sau của hàm, thậm chí
 
 Hãy để những môn sinh trẻ tuổi thấy được sự tuyệt vời của những thứ bạn tạo ra! Những cái tên như `superElement`, `megaFrame` và `niceItem` chắc chắn sẽ soi sáng họ.
 
-Thật vậy, một cái gì đó được naming: super..., mega..., nice... Nhưng mặt khác - điều đó không mang lại thông tin chi tiết nào. Môn sinh trẻ tuổi có thể tự ngộ ra một ý nghĩa ẩn nào đó sau khi đã thiền định trong một hoặc hai giờ.
+Thật vậy, một cái gì đó được naming: `super...`, `mega...`, `nice...` Nhưng mặt khác - điều đó không mang lại thông tin chi tiết nào. Môn sinh trẻ tuổi có thể tự ngộ ra một ý nghĩa ẩn nào đó sau khi đã thiền định trong một hoặc hai giờ.
 
 ## Chồng chéo các biến bên ngoài
 
@@ -177,13 +177,13 @@ Môn sinh trẻ tuổi đang làm việc với đoạn code bên trong function 
 
 ## Side-effects everywhere!!!
 
-Có những chức năng giống như chúng `không thay đổi gì cả`. Những function với cái tên như `isReady()`, `checkPermission()`, `findTags()`,... Chúng được giả định để thực hiện các phép tính, tìm và trả về dữ liệu mà `không thay đổi bất kỳ thứ gì bên ngoài chúng`. Nói cách khác, không có __"side effect"__.
+Có những chức năng giống như chúng __không thay đổi gì cả__. Những function với cái tên như `isReady()`, `checkPermission()`, `findTags()`,... Chúng được giả định để thực hiện các phép tính, tìm và trả về dữ liệu mà __không thay đổi bất kỳ thứ gì bên ngoài chúng__. Nói cách khác, không có __"side effect"__.
 
-+ Một ninja đắc đạo biết cách `thêm vào chúng những chức năng hữu ích` để hỗ trợ đồng đội.
++ Một ninja đắc đạo biết cách __thêm vào chúng những chức năng hữu ích__ để hỗ trợ đồng đội.
 
 Biểu hiện của sự ngạc nhiên ngạc nhiên trên khuôn mặt của đồng nghiệp của bạn khi anh ta thấy một chức năng có tên là `check...` hoặc `find...` thay đổi một cái gì đó - chắc chắn sẽ là lý do anh ấy rời xa bạn hơn :)).
 
-+ Một cách khác để gây ngạc nhiên cho anh bạn đồng nghiệp là `trả lại kết quả không chuẩn`.
++ Một cách khác để gây ngạc nhiên cho anh bạn đồng nghiệp là __trả lại kết quả không chuẩn__.
 
 Với cách suy nghĩ còn non nớt chưa qua rèn rũa của một môn sinh, `checkPermission()` hẳn là một thứ gì đó mà sẽ trả về `true/false`, nhưng là một ninja có trách nhiệm, bạn nên trả về nhiều hơn để giúp anh ta, hãy trả về cho anh ấy một object.
 
@@ -209,7 +209,7 @@ Tưởng tượng một thằng ngốc nào đó trong team muốn sử dụng c
 
 # TL;DR
 
-Tất cả những `code lý` trong `code đạo` của ninja đạo kể trên đều từ source code có thật...Nhiều khi nó được viết bởi những developer nhiều năm kinh nghiệm, có lẽ có thể còn nhiều hơn cả bạn ;).
+Tất cả những __code lý__ trong __code đạo__ của ninja đạo kể trên đều từ source code có thật...Nhiều khi nó được viết bởi những developer nhiều năm kinh nghiệm, có lẽ có thể còn nhiều hơn cả bạn ;).
 
 - Tuân theo __một vài đạo lý__ trong số này, code của bạn sẽ tràn đầy sự bất ngờ.
 - Tuân theo __phần lớn đạo lý__ trong số này, code của bạn sẽ thực sự là của bạn, không ai muốn sửa hay động đến nó.
