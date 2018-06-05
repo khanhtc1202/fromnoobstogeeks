@@ -127,7 +127,7 @@ Ví dụ, hàm `printPage(page)` sẽ sử dụng máy in, in trang hiện tại
 
 Một ninja giỏi biết cách tăng tối đa hiệu quả sử dụng bộ nhớ bằng cách __chỉ tạo biến mới khi thực sự cần thiết__!
 
-Một mặt tích cực khác là bạn đỡ tốn thời gian naming cho biến mới. Do đó tốt hơn cả là sử dụng lại biến với những cái tên đã có, chỉ cần thay giá trị mới cho chúng.
+Một mặt tích cực khác là bạn đỡ tốn thời gian naming cho biến mới. Do đó tốt hơn cả là sử dụng lại biến với những cái tên đã có, chỉ cần __thay giá trị mới cho chúng__.
 
 Một ninja thượng đẳng có thể viết ra những function hàng chục dòng logic mà chỉ sử dụng các biến được __truyền vào dưới dạng tham số__. Một môn sinh mới sẽ cảm thấy khó khăn để xác định được chính xác giá trị tại thời điểm hiện tại của một biến nào đó, hay biến đó đến từ đâu. Một người có trực giác yếu sẽ phải phân tích đoạn mã theo từng dòng, theo dõi sự thay đổi qua mỗi nhánh mã và sau cùng tuyệt vọng chạy thử đoạn mã trên giấy...
 
