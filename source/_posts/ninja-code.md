@@ -177,7 +177,7 @@ Môn sinh trẻ tuổi đang làm việc với đoạn code bên trong function 
 
 ## Side-effects everywhere!!!
 
-Có những chức năng giống như chúng __không thay đổi gì cả__. Những function với cái tên như `isReady()`, `checkPermission()`, `findTags()`,... Chúng được giả định để thực hiện các phép tính, tìm và trả về dữ liệu mà __không thay đổi bất kỳ thứ gì bên ngoài chúng__. Nói cách khác, không có __"side effect"__.
+Có những chức năng giống như chúng __không thay đổi gì cả__. Những function với cái tên như `isReady()`, `checkPermission()`, `findTags()`,... Chúng được giả định để thực hiện các phép tính, tìm và trả về dữ liệu mà __không thay đổi bất kỳ thứ gì bên ngoài chúng__. Nói cách khác, chúng không có __"side effect"__.
 
 + Một ninja đắc đạo biết cách __thêm vào chúng những chức năng hữu ích__ để hỗ trợ đồng đội.
 
