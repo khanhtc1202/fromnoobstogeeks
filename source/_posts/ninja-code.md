@@ -55,7 +55,7 @@ Tên biến một chữ cái trong 1 block code giống như những ninja ẩn 
 
 ...Tuy nhiên vẫn có một ngoại lệ. Một ninja đắc đạo sẽ không bao giờ dùng biến một-chữ-cái như `i` để làm biến đếm trong vòng `for`. Lý do tại sao à, đơn giản là vì còn rất nhiều lựa chọn khác ngoài `i`, như `x` hay `y` chẳng hạn. 
 
-Một ninja thực thụ sẽ không bao giờ để biến của anh ta dễ dàng bị bắt chỉ bởi dùng một chữ cái ai cũng biết như `i` được. Và đặc biệt, khi độ dài của vòng `loop` đó lên đến 1-2 trang (trang ở đây chỉ độ dài hiển thị source code trên một màn hình - nếu có thể, hãy cố gắng làm cho vòng for của bạn dài đến 3 trang, điều này giúp biến của bạn ẩn mình tốt hơn), khi đó không bạn đã ngộ được nguyên lý để ẩn mình thực sự.
+Một ninja thực thụ sẽ không bao giờ để biến của anh ta dễ dàng bị bắt chỉ bởi dùng một chữ cái ai cũng biết như `i` được. Và đặc biệt, khi độ dài của vòng `loop` đó lên đến 1-2 trang (trang ở đây chỉ độ dài hiển thị source code trên một màn hình - nếu có thể, hãy cố gắng làm cho vòng for của bạn dài đến 3 trang, điều này giúp biến của bạn ẩn mình tốt hơn), khi đó bạn đã ngộ được nguyên lý để ẩn mình thực sự.
 
 ## Rút....gọn
 
