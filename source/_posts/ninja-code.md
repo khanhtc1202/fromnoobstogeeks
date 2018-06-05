@@ -6,11 +6,11 @@ tags:
 - javascript
 ---
 
-Bài viết lược dịch từ [đây](https://javascript.info/ninja-code). Đối với tôi, không có từ nào nhận xét tốt hơn cho bản gốc của bài viết này ngoài 2 chữ `tuyệt vời` :)).
+Nếu coding giống như một trận chiến giữa programer và problem cần giải quyết thì, giống như những chiến binh thực thự, chúng ta tìm kiếm đạo (phương pháp chiến đấu) phù hợp cho chính mình. Trong bạt ngàn những đạo (những nguyên lý), kinh dịch (article trên blog của những blogger nổi tiếng), chú thích kinh nghiệm (những note, post được đông đảo dev `kip` lại),...đâu đó quanh đây vẫn tồn tại một đạo mà không mấy ai để ý đến nhưng số người theo thì đếm không kể hết. Có người đắc đạo hoàn toàn, có người một phần, tuy theo nhiều mức độ khác nhau nhưng tựu chung có thể coi đều là đồng đạo trong môn phái này :))
 
 <!-- more -->
 
-Nếu coding giống như một trận chiến giữa programer và problem cần giải quyết thì, giống như những chiến binh thực thự, chúng ta tìm kiếm đạo (phương pháp chiến đấu) phù hợp cho chính mình. Trong bạt ngàn những đạo (những nguyên lý), kinh dịch (article trên blog của những blogger nổi tiếng), chú thích kinh nghiệm (những note, post được đông đảo dev `kip` lại),...đâu đó quanh đây vẫn tồn tại một đạo mà không mấy ai để ý đến nhưng số người theo thì đếm không kể hết. Có người đắc đạo hoàn toàn, có người một phần, tuy theo nhiều mức độ khác nhau nhưng tựu chung có thể coi đều là đồng đạo trong môn phái này :))
+> Chú ý: Bài viết lược dịch từ [đây](https://javascript.info/ninja-code). Đối với tôi, không có từ nào nhận xét tốt hơn cho bản gốc của bài viết này ngoài 2 chữ `tuyệt vời` :)).
 
 Trong khuôn khổ bài viết, đạo này được naming là `ninja đạo` - người theo đạo được naming là các ninja (ninja đắc đạo là những ninja tuân thủ nghiêm ngặt theo những đạo lý được liệt kê trong bài viết này).
 
