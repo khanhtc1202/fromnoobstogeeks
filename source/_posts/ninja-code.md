@@ -197,7 +197,7 @@ Cho đến khi môn sinh trẻ tuổi kia viết những thứ đại loại nh�
 
 Đừng giới hạn chức năng function của bạn chỉ bởi vì cái tên của nó. Hãy để cho nó làm được nhiều hơn thế.
 
-Ví dụ như function `validateEmail(email)` bên cạnh việc kiểm tra tính đúng đắn của email, nó nên xuất ra thông báo về lỗi đó và gửi yêu cầu để người dùng gửi lại email chẳng hạn. Không gì tốt hơn việc chỉ gọi một function và bạn đã có mọi thứ bạn muốn :)).
+Ví dụ như function `validateEmail(email)` bên cạnh việc kiểm tra tính đúng đắn của email, nó nên xuất ra thông báo về lỗi đó và gửi yêu cầu để người dùng gửi lại email chẳng hạn. Không gì tốt hơn việc __chỉ gọi một function và bạn đã có mọi thứ bạn muốn__ :)).
 
 Những ninja giỏi biết cách giấu hàng tá logic vào trong code của họ, để không ai có thể đánh cắp chúng từ bên ngoài.
 
