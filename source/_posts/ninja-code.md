@@ -116,7 +116,7 @@ Nhấn mạnh rằng có sự khác biệt tinh tế giữa các chức năng nh
 
 Nếu đã đặt `tiền tố khác nhau cho những chức năng tương tự nhau`, còn gì cản bước bạn không thực hiện nốt phần ngược lại `đặt tên tiền tố giống nhau cho những chức năng không mấy liên quan đến nhau`?
 
-Ví dụ, hàm `printPage(page)` sẽ sử dụng máy in, in trang hiện tại. Và hàm `printText(text)` sẽ hiển thị văn bản lên màn hình. Hãy để môn sinh xa lạ khi nghĩ về chức năng `printMessage(message)` - một cái tên cùng tiền tố - “Nó đặt thông điệp ở đâu? Để máy in hoặc trên màn hình? ”. Sẽ là một môn sinh ddầy triển vọng nếu anh ta có thể làm cho nó thực sự tỏa sáng bằng một ý tưởng: `printMessage(message)` nên xuất nó trong cửa sổ mới!
+Ví dụ, hàm `printPage(page)` sẽ sử dụng máy in, in trang hiện tại. Và hàm `printText(text)` sẽ hiển thị văn bản lên màn hình. Hãy để môn sinh xa lạ khi nghĩ về chức năng `printMessage(message)` - một cái tên cùng tiền tố - “Nó đặt thông điệp ở đâu? Để máy in hoặc trên màn hình? ”. Sẽ là một môn sinh đầy triển vọng nếu anh ta có thể làm cho nó thực sự tỏa sáng bằng một ý tưởng: `printMessage(message)` nên xuất nó trong cửa sổ mới!
 
 ## Tái sử dụng tên (biến, hàm,...)
 
