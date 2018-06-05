@@ -179,7 +179,7 @@ Môn sinh trẻ tuổi đang làm việc với đoạn code bên trong function 
 
 Có những chức năng giống như chúng `không thay đổi gì cả`. Những function với cái tên như `isReady()`, `checkPermission()`, `findTags()`,... Chúng được giả định để thực hiện các phép tính, tìm và trả về dữ liệu mà `không thay đổi bất kỳ thứ gì bên ngoài chúng`. Nói cách khác, không có __"side effect"__.
 
-+ Một ninja đắc đạo biết cách `thêm vào chúng những chắc năng hữu ích` để hỗ trợ đồng đội.
++ Một ninja đắc đạo biết cách `thêm vào chúng những chức năng hữu ích` để hỗ trợ đồng đội.
 
 Biểu hiện của sự ngạc nhiên ngạc nhiên trên khuôn mặt của đồng nghiệp của bạn khi anh ta thấy một chức năng có tên là `check...` hoặc `find...` thay đổi một cái gì đó - chắc chắn sẽ là lý do anh ấy rời xa bạn hơn :)).
 
