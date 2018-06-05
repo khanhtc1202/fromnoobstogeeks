@@ -98,7 +98,7 @@ Không có cách nào để thực sự hiểu được đoạn code của bạn
 
 Sự tập trung cũng là một trong những yếu tố phân định đẳng cấp của một ninja! Chỉ những ninja đã thực sự tập trung và kiên nhẫn mới đủ tư cách đi cùng những ninja thượng đẳng khác. Vậy làm cách nào để thử thách họ - những môn sinh non trẻ?
 
-Một cách đơn giản, hãy __sử dụng những cặp tên dễ nhầm lẫn đặt tên biến__ như là `data` & `date`. Sau đó mix chúng lại với nhau! Sẽ không ai có thể nhanh chóng đọc được source code của bạn, và rồi khi có lỗi typo (lỗi đánh máy) Uhm...chúng ra sẽ còn kẹt ở đây khá lâu, một tách trà trước khi tiếp tục không phải một ý tưởng tồi...
+Một cách đơn giản, hãy __sử dụng những cặp tên dễ nhầm lẫn đặt tên biến__ như là `data` & `date`. Sau đó mix chúng lại với nhau! Sẽ không ai có thể nhanh chóng đọc được source code của bạn, và rồi khi có lỗi typo (lỗi đánh máy) Uhm...chúng ta sẽ còn kẹt ở đây khá lâu, một tách trà trước khi tiếp tục không phải một ý tưởng tồi...
 
 ## Tiền tố
 
