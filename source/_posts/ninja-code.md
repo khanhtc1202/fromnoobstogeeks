@@ -213,4 +213,4 @@ Tất cả những __code lý__ trong __code đạo__ của ninja đạo kể tr
 
 - Tuân theo __một vài đạo lý__ trong số này, code của bạn sẽ tràn đầy sự bất ngờ.
 - Tuân theo __phần lớn đạo lý__ trong số này, code của bạn sẽ thực sự là của bạn, không ai muốn sửa hay động đến nó.
-- Tuân theo __tất cả những đạo lý__ trên, code của bạn sẽ trở thành một bài học có giá trị cho các môn sinh trẻ tìm kiếm sự giác ngộ.
+- Tuân theo __tất cả những đạo lý__ này, code của bạn sẽ trở thành một bài học có giá trị cho các môn sinh trẻ tìm kiếm sự giác ngộ.
