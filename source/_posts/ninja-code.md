@@ -181,7 +181,7 @@ Có những chức năng giống như chúng __không thay đổi gì cả__. Nh
 
 + Một ninja đắc đạo biết cách __thêm vào chúng những chức năng hữu ích__ để hỗ trợ đồng đội.
 
-Biểu hiện của sự ngạc nhiên trên khuôn mặt của đồng nghiệp của bạn khi anh ta thấy một chức năng có tên là `check...` hoặc `find...` thay đổi một cái gì đó - chắc chắn sẽ là lý do anh ấy rời xa bạn hơn :)).
+Biểu hiện của sự ngạc nhiên trên khuôn mặt đồng nghiệp của bạn khi anh ta thấy một chức năng có tên là `check...` hoặc `find...` thay đổi một cái gì đó - chắc chắn sẽ là lý do anh ấy rời xa bạn hơn :)).
 
 + Một cách khác để gây ngạc nhiên cho anh bạn đồng nghiệp là __trả lại kết quả không chuẩn__.
 
