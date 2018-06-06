@@ -88,7 +88,7 @@ Nhưng làm thế nào khi cái tên `data` đã bị một ninja khác trong te
 
 Một môn sinh trẻ tuổi có thể ban đầu cảm thấy lạc lõng và tự hỏi kĩ năng đặt tên biến như trên có thực sự giúp ích cho một ninja? Hãy tự tin và nói với anh ta "chắc chắn rồi!".
 
-Thật vậy, những cái tên trên thực sự vẫn mang trong nó ý nghĩa: `str` thể hiện biến đó đang lưu một chuỗi gì đó,...Nhưng khi có ai đó bên ngoài thử cố gắng hiểu đoạn code của bạn, họ sẽ bất ngờ nhận ra cái tên đó chẳng mang một ý nghĩa cụ thể nào cả :)) họ sẽ phải từ bỏ việc đào bới đoạn code và như vậy biến cùng với logic của bạn được __an toàn__ là của bạn.
+Thật vậy, những cái tên trên thực sự vẫn mang trong nó ý nghĩa: `str` thể hiện biến đó đang lưu một chuỗi gì đó, `num` sẽ lưu một số,... Nhưng khi có ai đó bên ngoài thử cố gắng hiểu đoạn code của bạn, họ sẽ bất ngờ nhận ra cái tên đó chẳng mang một ý nghĩa cụ thể nào cả :)) họ sẽ phải từ bỏ việc đào bới đoạn code và như vậy biến cùng với logic của bạn được __an toàn__ là của bạn.
 
 Không có cách nào để thực sự hiểu được đoạn code của bạn - một ninja thượng đẳng - ngoại trừ việc dành nhiều thời gian cho nó và phải thực sự tĩnh tâm :)) Bạn sẽ bất ngờ về khả năng đọc code của môn sinh mới sau vài tháng luyện tập.
 
@@ -114,7 +114,7 @@ Nhấn mạnh rằng có sự khác biệt tinh tế giữa các chức năng nh
 
 ...Và bây giờ là thời gian dành cho mẹo vặt!
 
-Nếu đã __đặt tiền tố khác nhau cho những chức năng tương tự nhau__, còn gì cản bước bạn không thực hiện nốt phần ngược lại __đặt tên tiền tố giống nhau cho những chức năng không mấy liên quan đến nhau__?
+Nếu đã __đặt tiền tố khác nhau cho những chức năng tương tự nhau__, còn gì cản bước bạn không thực hiện nốt phần còn lại: __đặt tên tiền tố giống nhau cho những chức năng không mấy liên quan đến nhau__?
 
 Ví dụ, hàm `printPage(page)` sẽ sử dụng máy in, in trang hiện tại. Và hàm `printText(text)` sẽ hiển thị văn bản lên màn hình. Hãy để môn sinh xa lạ khi nghĩ về chức năng `printMessage(message)` - một cái tên cùng tiền tố - “Nó đặt thông điệp ở đâu? Để máy in hoặc trên màn hình? ”. Sẽ là một môn sinh đầy triển vọng nếu anh ta có thể làm cho nó thực sự tỏa sáng bằng một ý tưởng: `printMessage(message)` nên xuất nó trong cửa sổ mới!
 
@@ -149,7 +149,7 @@ Khi muốn làm việc với biến `elem` ở nửa sau của hàm, thậm chí
 
 Hãy để những môn sinh trẻ tuổi thấy được sự tuyệt vời của những thứ bạn tạo ra! Những cái tên như `superElement`, `megaFrame` và `niceItem` chắc chắn sẽ soi sáng họ.
 
-Thật vậy, một cái gì đó được naming: `super...`, `mega...`, `nice...` Nhưng mặt khác - điều đó không mang lại thông tin chi tiết nào. Môn sinh trẻ tuổi có thể tự ngộ ra một ý nghĩa ẩn nào đó sau khi đã thiền định trong một hoặc hai giờ.
+Thật vậy, một cái gì đó được naming: `super...`, `mega...`, `nice...` hẳn là một thứ tuyệt vời. Nhưng mặt khác - điều đó không mang lại thông tin chi tiết nào. Môn sinh trẻ tuổi có thể sẽ tự ngộ ra một ý nghĩa ẩn nào đó, sau khi đã thiền định trong một hoặc hai giờ.
 
 ## Chồng chéo các biến bên ngoài
 
@@ -181,7 +181,7 @@ Có những chức năng giống như chúng __không thay đổi gì cả__. Nh
 
 + Một ninja đắc đạo biết cách __thêm vào chúng những chức năng hữu ích__ để hỗ trợ đồng đội.
 
-Biểu hiện của sự ngạc nhiên ngạc nhiên trên khuôn mặt của đồng nghiệp của bạn khi anh ta thấy một chức năng có tên là `check...` hoặc `find...` thay đổi một cái gì đó - chắc chắn sẽ là lý do anh ấy rời xa bạn hơn :)).
+Biểu hiện của sự ngạc nhiên trên khuôn mặt của đồng nghiệp của bạn khi anh ta thấy một chức năng có tên là `check...` hoặc `find...` thay đổi một cái gì đó - chắc chắn sẽ là lý do anh ấy rời xa bạn hơn :)).
 
 + Một cách khác để gây ngạc nhiên cho anh bạn đồng nghiệp là __trả lại kết quả không chuẩn__.
 
@@ -205,7 +205,7 @@ Những ninja giỏi biết cách giấu hàng tá logic vào trong code của h
 
 __Kết hợp nhiều logic vào trong cùng một chỗ giúp bảo vệ code của bạn khỏi nguy cơ bị tái sử dụng.__
 
-Tưởng tượng một thằng ngốc nào đó trong team muốn sử dụng code của một ninja như bạn, ví dụ như hàm `validateEmail(email)` bên trên. Sau vài giờ thiền định và nhận ra function bạn viết làm được còn nhiều hơn cả những gì một gã ngốc như anh ta mong đợi (kiểm tra tính đúng đắn của email), nghiễm nhiên, anh ta sẽ bỏ cuộc và không có ý định làm phiền đến khoảng thời gian thiền định của bạn.
+Tưởng tượng một thằng ngốc nào đó trong team muốn sử dụng code của một ninja như bạn, ví dụ như hàm `validateEmail(email)` bên trên. Sau vài giờ thiền định và nhận ra function bạn viết làm được còn nhiều hơn cả những gì một gã ngốc như anh ta mong đợi (kiểm tra tính đúng đắn của email), nghiễm nhiên, anh ta sẽ bỏ cuộc và không có ý định làm phiền đến khoảng thời gian thiền định của bạn nữa.
 
 # TL;DR
 
