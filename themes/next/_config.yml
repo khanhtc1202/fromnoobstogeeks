@@ -361,10 +361,10 @@ sidebar_width:
 # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
 # ---------------------------------------------------------------
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
-  host:
+  host: https://fonts.googleapis.com
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -374,7 +374,7 @@ font:
   # Global font settings used for all elements in <body>.
   global:
     external: true
-    family: Lato
+    family: Open Sans
     size:
 
   # Font settings for Headlines (H1, H2, H3, H4, H5, H6).
