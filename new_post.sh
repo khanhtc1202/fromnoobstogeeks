@@ -8,7 +8,7 @@ do
 done
 
 # define var
-TEMP="---\ntitle:\ndate: $(date +"%Y-%m-%d %T")\ntags:\n---\n"
+TEMP="---\ntitle:\ndate: $(date +"%Y-%m-%d %T")\ntags:\n---\n\n\n<!-- more -->\n"
 SRC_DIR="./source/_posts/"
 MD_PATH=$SRC_DIR$1".md"
 
