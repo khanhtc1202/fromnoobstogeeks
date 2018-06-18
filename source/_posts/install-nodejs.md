@@ -9,6 +9,8 @@ tags:
 
 Từ cái ngày trẻ trâu copy icon half-life vào usb cho đến khi biết click next next next trong installer của mấy cái app trên windows, bây giờ nhìn lại với mình vẫn là cả một bầu trời kỉ niệm :)) Từ hồi đó cũng gọi là có biết chút ít cái shell của windows nhưng cũng chẳng mấy khi động đến. Cho đến lúc được lần đầu tiếp xúc với linux, tương tác hồi đó vẫn chủ yếu là trỏ chuột. Dần dần khi đã quen và tương tác chuyển dần sang terminal, cảm giác cài app với command kể cũng ngầu ngầu :)).
 
+<!-- more -->
+
 Sự thần thánh của các package manager là không phải bàn cãi. Khi mới chuyển sang làm quen thử với bất cứ một bản distro nào mới, gần như việc đầu tiên mà bạn vô thức làm sẽ là kiểm tra xem package manager của distro đó là gì. Những cái tên không cần nhắc ai cũng biết đến như: `apt` cho debian base distro, `yum` cho redhat, `pacman` cho arch,... Những gói này được gọi là các `distribution package manager` (để phân biệt với 1 loại package manager nữa sẽ nói bên dưới).
 
 ![Imgur](https://i.imgur.com/UeyPZjT.png)
