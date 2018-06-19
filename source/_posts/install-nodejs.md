@@ -46,8 +46,9 @@ Về cơ bản thì các gói đều có source file và build script, có thể
 Ví dụ để cài node từ source đơn giản có thể làm theo các bước sau:
 
 1. Tải source & giải nén: với node có thể tìm thấy tại [đây](https://nodejs.org/dist/).
-```bash
-$ wget -qO- https://nodejs.org/dist/v8.11.3/node-v8.11.3-darwin-x64.tar.gz | tar xvz
+```
+$ wget -qO- https://nodejs.org/dist/v8.11.3/node-v8.11.3-darwin-x64.tar.gz \
+ | tar xvz
 ```
 2. Copy thư mục source sang `/usr/local/bin` (lưu ý nên để ở đây thay vì `/usr/bin` đối với source locally compiled)
 ```bash
