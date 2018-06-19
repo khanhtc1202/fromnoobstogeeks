@@ -61,6 +61,6 @@ Lưu ý: trong trường hợp trong bin/ của package sau giải nén chưa c�
 
 DONE! Đơn giản và không phải đau đầu về vụ depend lẫn nhau giữa các package manager nữa :)) Về cơ bản thì mình thấy cách cài từ source có xịt thì cũng là do bạn thôi, không phải đổ lỗi cho thằng khác nữa nên đỡ mất công tìm :))
 
-Đến đây là hết rồi :)) Dạo gần đây mình cũng lười, nên viết lại cái note coi như tự nhắc nhở bản thân :v Về cơ bản là không có __magic__ - chỉ là __code của một người__ nào đó __chạy ở chỗ__ nào đó khác thôi, cứ từ từ mà tìm :)).
+Đến đây là hết rồi :)) Dạo gần đây mình cũng lười, nên viết lại cái note coi như tự nhắc nhở bản thân :v Về cơ bản là __không có magic__ - chỉ __là code của một người nào đó chạy ở chỗ nào đó__ khác thôi, cứ từ từ mà tìm :)).
 
 P/S: Install script tải node theo flow trên có thể tìm thấy tại [đây](https://gist.github.com/khanhtc1202/ef1a256223c804364e692f2d6dff02ca) hoặc tải trực tiếp tại [đây](https://gist.githubusercontent.com/khanhtc1202/ef1a256223c804364e692f2d6dff02ca/raw/7c7e80e704a5901896d876a70ddcdf71e65a540e/install-node-js).
