@@ -60,7 +60,7 @@ $ echo "export PATH=$PATH:/usr/local/node/bin" >> $YOUR_SHELL_RC
 ```
 Lưu ý: trong trường hợp trong bin/ của package sau giải nén chưa có nội dung (source chưa được build), đọc README và build lại theo hướng dẫn là cách đơn giản hơn nhiều so với việc tiếp tục mò google với hi vọng tìm được một cách ăn sẵn nào đó :))
 
-DONE! Đơn giản và không phải đau đầu về vụ depend lẫn nhau giữa các package manager nữa :)) Về cơ bản thì mình thấy cách cài từ source có xịt thì cũng là do bạn thôi, không phải đổ lỗi cho thằng khác nữa nên đỡ mất công tìm :))
+DONE! Đơn giản và không phải đau đầu về vụ depend lẫn nhau giữa các package manager nữa :)) Về cơ bản thì mình thấy cách cài từ source có xịt thì cũng là do bạn thôi, không phải đổ lỗi cho người khác nữa nên đỡ mất công tìm :))
 
 Đến đây là hết rồi :)) Dạo gần đây mình cũng lười, nên viết lại cái note coi như tự nhắc nhở bản thân :v Về cơ bản là __không có magic__ - chỉ __là code của một người nào đó chạy ở chỗ nào đó__ khác thôi, cứ từ từ mà tìm :)).
 
