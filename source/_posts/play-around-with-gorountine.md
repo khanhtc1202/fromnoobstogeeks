@@ -25,11 +25,11 @@ Theo suy nghĩ thông thường, ta có implement của phép duyệt LNR đơn 
 
 ```C
 void LNR(Tree T) {
-    if (T!=NULL) {
-        LNR(T->Left);
-        printf("%d ", T->value);
-        LNR(T->Right);
-    }
+	if (T!=NULL) {
+		LNR(T->Left);
+		printf("%d ", T->value);
+		LNR(T->Right);
+	}
 }
 ```
 
@@ -101,3 +101,5 @@ func main() {
 	...
 }
 ```
+
+P/S: Sau khi ngó nghía chán đống quiz rồi mình mới phát hiện ra có public solutions của golang team trên github :'( . Tham khảo thêm solutions của golang team tại [đây](https://github.com/golang/tour/tree/master/solutions).
