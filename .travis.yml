@@ -13,6 +13,6 @@ before_install:
 deploy:
   provider: script
   skip_cleanup: true
-  script: npm install && hexo generate --deploy && scp -r $TRAVIS_BUILD_DIR/public/* hoangnm@fromnoobstogeeks.com:/home/hoangnm/web/fromnoobstogeeks/html
+  script: npm install && hexo generate --deploy && scp -r $TRAVIS_BUILD_DIR/public/* blog@fromnoobstogeeks.com:/home/blog/web/fromnoobstogeeks
   on:
     branch: develop
