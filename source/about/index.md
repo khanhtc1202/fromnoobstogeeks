@@ -14,6 +14,8 @@ My favorite quotes...
 
 > ‘hope’ is not a strategy.
 
+> Learning questions level: what? -> why? -> how?
+
 ## My favorite books
 
 - [The Subtle Art of Not Giving a F*ck](https://www.amazon.co.jp/dp/0062457713)
