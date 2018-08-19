@@ -24,6 +24,14 @@ My favorite quotes...
 
 - [Boogeyman](https://github.com/khanhtc1202/boogeyman): A simple extra search package
 - [Api generator](https://github.com/khanhtc1202/api-generator): Generate restful api from mongodb
-- [Anime crawling system](https://github.com/khanhtc1202/animu-crawling-system): Crawling anime base on rss config 
+- [Anime crawling system](https://github.com/khanhtc1202/animu-crawling-system): Crawling anime base on rss config
+
+## Published servies
+
+- [Verbal Regex](https://verbalregex.com): Regular expression made easy.
+
+## Presentation
+
+- Paper reading festival (event of VAIJ community - 20180819). Slide go [here](https://slides.com/khanhtc/deck/live).
 
 To be continued...
