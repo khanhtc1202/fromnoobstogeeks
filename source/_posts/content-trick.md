@@ -8,11 +8,11 @@ Chắc hẳn ít ai có thể mạnh miệng khẳng định rằng: Trong suố
 
 <!-- more -->
 
-Một cách chắc chắn, có thể nói, những gì đã hiển thị trên thiết bị của bạn, nó đã ở trong tay bạn - vấn đề chỉ có làm thế nào để lấy được nó thôi ( ͡° ͜ʖ ͡°) . Cũng như đã nói ở trên, việc chặn để người dùng không lấy content một cách dễ dàng là một vấn đề mà bất cứ người làm dịch vụ trực tuyến nào cũng phải giải quyết. Trong cả tá những cách hại não mà ai cũng có thể kể ra (mà chẳng biết có bao nhiêu người làm) thì một trong những phương pháp đơn giản nhưng có vẻ mang lại hiệu quả khá tốt là: chặn để người dùng __không tương tác trực tiếp__ được với content trên thiết bị của họ. Có cả đống cách kiểu này kiểu như: chặn chuột phải, chặn inspect (của browser), mã hoá content trả về cho device,...và dù là cách nào thì nếu chịu khó mò cũng có thể qua được.
+Một cách chắc chắn, có thể nói, những gì đã hiển thị trên thiết bị của bạn, nó đã ở trong tay bạn - vấn đề chỉ là làm thế nào để lấy được nó thôi ( ͡° ͜ʖ ͡°) . Cũng như đã nói ở trên, việc chặn để người dùng không lấy content một cách dễ dàng là một vấn đề mà bất cứ người làm dịch vụ trực tuyến nào cũng phải giải quyết. Trong cả tá những cách hại não mà ai cũng có thể kể ra (mà chẳng biết có bao nhiêu người làm) thì một trong những phương pháp đơn giản nhưng có vẻ mang lại hiệu quả khá tốt là: chặn để người dùng __không tương tác trực tiếp__ được với content trên thiết bị của họ. Có cả đống cách dạng này kiểu như: chặn chuột phải, chặn inspect (của browser), mã hoá content trả về cho device,...và dù là cách nào thì nếu chịu khó mò cũng có thể qua được.
 
-Chắc hẳn developer nào cũng không lạ lẫm gì với công cụ inspect của trình duyệt. Nó là một công cụ tuyệt vời! Debug, view request, kiểm tra phần tử,...nếu để hỏi cho điểm bắt đầu tốt khi muốn "chôm" một cái gì đó từ web, chắc chắn là thử inspect nó :)).
+Chắc hẳn là developer, không ai lạ lẫm gì với công cụ inspect của trình duyệt. Nó là một công cụ tuyệt vời! Debug, view request, kiểm tra phần tử,...nếu hỏi một điểm bắt đầu tốt khi muốn "chôm" một cái gì đó từ web, chắc chắn là thử inspect nó :)).
 
-Mọi chuyện sẽ chẳng có gì, nếu như hôm nay, trong khi đang tìm cách __lưu lại một số content đã hiển thì trên thiết bị cá nhân__ mình bắt gặp được một trường hợp khá thú vị như sau:
+Mọi chuyện sẽ chẳng có gì, nếu như hôm nay, trong khi đang tìm cách __lưu lại một số content đã hiển thị trên thiết bị cá nhân__, mình bắt gặp được một trường hợp khá thú vị như sau:
 
 ![gif](https://thumbs.gfycat.com/DistantKindlyCub-size_restricted.gif)
 
@@ -84,7 +84,7 @@ Argument được truyền vào thông qua contructor được treat như là na
 - chạy hàm anonymous vừa gen trên, đưa browser về debug mode
 - nếu user next step trong debug mode, gọi đệ quy hàm `c()`
 
-Phần còn lại là `try catch` block, trong case lỗi thì tự động boostrap lại toàn bộ luồn trên sau 1s bằng setTimeout(). Để ý ở đây trong case biểu thức điều khiển sinh hàm `function(){}.constructor("debugger")()` nếu false và không được chạy nhiều lần, có khả năng đệ quy liên tục hàm `c()` và bạn sẽ nhận được lỗi dạng thế này
+Phần còn lại là `try catch` block, trong case lỗi thì tự động boostrap lại toàn bộ luồng trên sau 1s bằng `setTimeout()`. Để ý ở đây trong case biểu thức điều khiển sinh hàm `function(){}.constructor("debugger")()` nếu false và không được chạy nhiều lần, có khả năng đệ quy liên tục hàm `c()` và bạn sẽ nhận được lỗi dạng thế này
 
 ```
 RangeError: Maximum call stack size exceeded
@@ -104,6 +104,6 @@ Ok đến đây coi như đã hiểu thêm được một cách block user khá 
 
 Đáp án ở ngay bên cạnh đề bài :)) Vị trí được trỏ đến trong ảnh là chức năng `Deactivate breakpoints` của browser, tất cả các breakpoint (bao gồm cả cách breakpoint sinh ra từ sau do hiệu quả của vòng đệ quy bên trên) đề sẽ bị vô hiệu ( ͡° ͜ʖ ͡°) .
 
-Khi lần đầu mình gặp cách block này, mình đã nghĩ nó là bug do đội dev quên mất chưa xoá debugger ( ͡° ͜ʖ ͡°) sau khi đọc được đoạn nguyên nhân gây ra nó, mình chắc chắn nó là do cố ý :)). __Nó có sáng tạo không? Chắc chắn là có! Nó có hiệu quả không? Mình cũng không chắc nữa :))__ Bài học rút ra, khi bạn có ý tưởng mới nào đó, hãy chắc chắn xem xét hiệu quả của nó trước khi bỏ công ra để làm nó (điều này đúng với cả mình, thay vì bỏ công ra ngồi mò đoạn code trên thì khi biết nó là breakpoint, mình nên tắt luôn nó đi cho rồi T.T ).
+Khi lần đầu mình gặp cách block người dùng này, mình đã nghĩ nó là bug do đội dev quên mất chưa xoá debugger ( ͡° ͜ʖ ͡°) sau khi đọc được đoạn nguyên nhân gây ra nó, mình chắc chắn nó là do cố ý :)). __Nó có sáng tạo không? Chắc chắn là có! Nó có hiệu quả không? Mình cũng không chắc nữa :))__ Bài học rút ra, khi bạn có ý tưởng mới nào đó, hãy chắc chắn xem xét hiệu quả của nó trước khi bỏ công ra để làm nó (điều này đúng với cả mình, thay vì bỏ công ra ngồi mò đoạn code trên thì khi biết nó là breakpoint, mình nên tắt luôn nó đi cho rồi T.T ).
 
 Hết rồi :)) Code sample của trick trên có thể tìm thấy tại [đây](https://github.com/khanhtc1202/tricks/tree/master/block).
