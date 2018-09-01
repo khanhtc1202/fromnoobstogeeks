@@ -83,7 +83,7 @@ Argument được truyền vào thông qua contructor được treat như là na
 ```
 
 - bootstrap hàm `c()` với giá trị t = 0
-- check condition, expect giá trị `true` => gen hàm ƒ anonymous() { debugger }
+- check control expression, expect giá trị `true` => gen hàm ƒ anonymous() { debugger }
 - chạy hàm anonymous vừa gen trên, đưa browser về debug mode
 - nếu user next step trong debug mode, gọi đệ quy hàm `c()`
 
