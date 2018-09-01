@@ -101,7 +101,7 @@ RangeError: Maximum call stack size exceeded
 
 ![imgur](https://i.imgur.com/Yixr3jv.gif)
 
-Ok đến đây coi như đã hiểu thêm được một cách block user khá thú vị, tuy nhiên content thì mình vẫn muốn lấy ( ͡° ͜ʖ ͡°) . Tất nhiên, khi đã mò được đến đoạn code gây ra kết quả trên thì __chỉ cần xoá nó đi__ là xong :)) Tuy nhiên còn một cách khác (và nó là nguyên nhân chính khiến mình viết bài này), đó là dùng chính chức năng của browser - giống như cách mà dev "đối phương" dùng, lợi dụng tính năng debugger của browser!
+Ok đến đây coi như đã hiểu thêm được một cách block user khá thú vị, tuy nhiên content thì mình vẫn muốn lấy ( ͡° ͜ʖ ͡°) . Tất nhiên, khi đã mò được đến đoạn code gây ra kết quả trên thì __chỉ cần xoá nó đi__ là xong :)) Tuy nhiên còn một cách khác (và nó là nguyên nhân chính khiến mình viết bài này), đó là __dùng chính chức năng của browser__ - giống như cách mà dev "đối phương" dùng, lợi dụng tính năng debugger của browser!
 
 ![Imgur](https://i.imgur.com/vylppVW.png)
 
