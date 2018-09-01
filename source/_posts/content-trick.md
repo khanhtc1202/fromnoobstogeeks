@@ -105,7 +105,7 @@ Ok đến đây coi như đã hiểu thêm được một cách block user khá 
 
 ![Imgur](https://i.imgur.com/vylppVW.png)
 
-Đáp án ở ngay bên cạnh đề bài :)) Vị trí được trỏ đến trong ảnh là chức năng `Deactivate breakpoints` của browser, tất cả các breakpoint (bao gồm cả các breakpoint sinh ra từ sau do hiệu quả của vòng đệ quy bên trên) đề sẽ bị vô hiệu ( ͡° ͜ʖ ͡°) .
+Đáp án ở ngay bên cạnh đề bài :)) Vị trí được trỏ đến trong ảnh là chức năng `Deactivate breakpoints` của browser, tất cả các breakpoint (bao gồm cả các breakpoint sinh ra từ sau do hiệu quả của vòng đệ quy bên trên) đều sẽ bị vô hiệu ( ͡° ͜ʖ ͡°) .
 
 Khi lần đầu mình gặp cách block người dùng này, mình đã nghĩ nó là bug do đội dev quên mất chưa xoá debugger ( ͡° ͜ʖ ͡°) sau khi đọc được đoạn nguyên nhân gây ra nó, mình chắc chắn nó là do cố ý :)). __Nó có sáng tạo không? Chắc chắn là có! Nó có hiệu quả không? Mình cũng không chắc nữa :))__ Bài học rút ra, khi bạn có ý tưởng mới nào đó, hãy chắc chắn xem xét hiệu quả của nó trước khi bỏ công ra để làm nó (điều này đúng với cả mình, thay vì bỏ công ra ngồi mò đoạn code trên thì khi biết nó là breakpoint, mình nên tắt luôn nó đi cho rồi T.T ).
 
