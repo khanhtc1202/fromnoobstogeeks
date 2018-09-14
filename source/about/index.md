@@ -25,6 +25,7 @@ My favorite quotes...
 - [Boogeyman](https://github.com/khanhtc1202/boogeyman): A simple extra search package
 - [Api generator](https://github.com/khanhtc1202/api-generator): Generate restful api from mongodb
 - [Anime crawling system](https://github.com/khanhtc1202/animu-crawling-system): Crawling anime base on rss config
+- [Chio](https://github.com/khanhtc1202/chio): Module's metrics exporter
 
 ## Published servies
 
