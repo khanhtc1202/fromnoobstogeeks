@@ -27,12 +27,12 @@ My favorite quotes...
 - [Anime crawling system](https://github.com/khanhtc1202/animu-crawling-system): Crawling anime base on rss config
 - [Chio](https://github.com/khanhtc1202/chio): Module's metrics exporter
 
-## Published servies
+## Published services
 
 - [Verbal Regex](https://verbalregex.com): Regular expression made easy.
 
 ## Presentation
 
-- Paper reading festival (event of VAIJ community - 20180819). Slide go [here](https://slides.com/khanhtc/deck/live).
+- Paper reading festival (event of VAIJ community - 20180819). Slide go [here](https://slides.com/khanhtc/deck).
 
 To be continued...
