@@ -43,6 +43,12 @@ Việc thực hiện phép cộng bừa bãi nhiều khi thực sự gây ra nh�
 = l + (r - l)/2
 ```
 
+$$\begin{equation}
+\dfrac{l + r}{2}
+= \dfrac{2l + r - l}{2}
+= \dfrac{l + (r - l)}{2}
+\end{equation}$$
+
 Một biến đổi khá đơn giản nhưng đã tránh hoàn toàn được vấn đề **overflow** nói trên. Chú ý rằng với giả thiết đầu vào là **l nhỏ hơn bằng r** ta luôn có **(r - l)** nằm trong range cho phép của kiểu mẫu, đơn giản là vì bạn đã **load được r vào bộ nhớ thì chẳng có lý do gì không load được (r - l) < r vào đó cả** :).
 
 Tổng quát lên một chút ta có với giả thiết **X1 < X2 < ... < Xn**
@@ -53,5 +59,14 @@ Tổng quát lên một chút ta có với giả thiết **X1 < X2 < ... < Xn**
 = X1 + {(X2 - X1) + ... + (Xn - X1)}/n
 = X1 + Σ<k=2,n>{(Xk - X1)/n}
 ```
+
+$$\begin{equation}
+\begin{aligned}
+\dfrac{X_{1} + X_{2} + ... + X_{n}}{n}
+= \dfrac{nX_{1} + (X_{2} - X_{1}) + ... + (X_{n} - X_{1})}{n}
+= X_{1} + \dfrac{(X_{2} - X_{1}) + ... + (X_{n} - X_{1})}{n}
+= X_{1} + \sum_{k=2}^n{\dfrac{X_{k} - X_{1}}{n}}
+\end{aligned}
+\end{equation}$$
 
 Và với cách này thì bạn có thể thoải mái và yên tâm là không có chuyện tràn số nữa dù test dataset có lớn lên hay không :)).
