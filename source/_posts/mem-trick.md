@@ -37,12 +37,6 @@ Việc thực hiện phép cộng bừa bãi nhiều khi thực sự gây ra nh�
 
 Đoạn code mình vớ được hôm nay đem đến 1 ý tưởng không mới (chắc ai cũng biết nhưng chẳng mấy để ý) về vụ tránh lỗi tràn số nói trên. 
 
-```
-(l + r)/2
-= (2l + r - l)/2
-= l + (r - l)/2
-```
-
 $$\begin{equation}
 \dfrac{l + r}{2}
 = \dfrac{2l + r - l}{2}
@@ -53,19 +47,12 @@ Một biến đổi khá đơn giản nhưng đã tránh hoàn toàn được v�
 
 Tổng quát lên một chút ta có với giả thiết **X1 < X2 < ... < Xn**
 
-```
-{X1 + X2 + ... + Xn}/n
-= {nX1 + (X2 - X1) + ... + (Xn - X1)}/n
-= X1 + {(X2 - X1) + ... + (Xn - X1)}/n
-= X1 + Σ<k=2,n>{(Xk - X1)/n}
-```
-
 $$\begin{equation}
 \begin{aligned}
-\dfrac{X_{1} + X_{2} + ... + X_{n}}{n}
-= \dfrac{nX_{1} + (X_{2} - X_{1}) + ... + (X_{n} - X_{1})}{n}
-= X_{1} + \dfrac{(X_{2} - X_{1}) + ... + (X_{n} - X_{1})}{n}
-= X_{1} + \sum_{k=2}^n{\dfrac{X_{k} - X_{1}}{n}}
+\dfrac{X_{1} + X_{2} + ... + X_{n}}{n} 
+&= \dfrac{nX_{1} + (X_{2} - X_{1}) + ... + (X_{n} - X_{1})}{n} \\
+&= X_{1} + \dfrac{(X_{2} - X_{1}) + ... + (X_{n} - X_{1})}{n} \\
+&= X_{1} + \sum_{k=2}^n{\dfrac{X_{k} - X_{1}}{n}}
 \end{aligned}
 \end{equation}$$
 
