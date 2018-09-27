@@ -1,6 +1,7 @@
 ---
 title: Memory trick
 date: 2017-12-22 18:42:41
+mathjax: true
 tags: 
 - trick
 - os
