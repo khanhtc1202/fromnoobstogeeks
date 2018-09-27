@@ -83,7 +83,11 @@ The above is the way we make an compiled executable file with static libs, the e
 Source code sample go [here](https://github.com/khanhtc1202/c-advance/tree/master/tricks/libs-build).
 
 Reference to:
+
 - https://kipalog.com/posts/Thu-thuc-hien-4-Stage-khi-Compile-C-bang-GCC
+
 - https://www.geeksforgeeks.org/static-vs-dynamic-libraries/
+
 - https://www.geeksforgeeks.org/working-with-shared-libraries-set-1/
+
 - https://www.geeksforgeeks.org/working-with-shared-libraries-set-2/
