@@ -20,13 +20,13 @@ Ngoài những bài bên trên ra mình thấy có 1 bài dịch trên kipalog k
 
 Cập nhật thêm một bài so sánh về flux architecture vs mvc architecture mình cảm thấy rất hữu ích tại [đây](http://jonnyreeves.co.uk/2016/redux-middleware/).
 
-![Flux Architecture](https://media.giphy.com/media/yvAqpqJoPRvYMOVz5l/giphy.gif)
+![](https://media.giphy.com/media/yvAqpqJoPRvYMOVz5l/giphy.gif)
 
 ## Implement Flux
 
 Chúng ta đi implement một sample app bao gồm 1 search box nhập từ khoá, kết quả tìm được in lên trang như sau. ( mình noob application nên nó chỉ `đẹp` được đến vậy là hết sức rồi :)) )
 
-![giphy](https://media.giphy.com/media/RkN5nA5O00StGGwXVQ/giphy.gif)
+![](https://media.giphy.com/media/RkN5nA5O00StGGwXVQ/giphy.gif)
 
 Một vài điểm chú ý mình muốn nhắc lại trước khi bắt tay vào design 
 
@@ -37,7 +37,7 @@ Một vài điểm chú ý mình muốn nhắc lại trước khi bắt tay vào
 
 Xem hình dưới để có hình dung tổng quát của cấu trúc khi đảm bảo những chú ý trên:
 
-![Imgur](https://i.imgur.com/om44nEa.png)
+![](https://i.imgur.com/om44nEa.png)
 
 Dựa theo tư tưởng bên trên, ta thiết kế một project structure như sau:
 
@@ -79,7 +79,7 @@ Lý do mình chia ra như bên trên thành 2 component đơn giản chỉ là m
 
 Ta có trình tự implement.
 
-![Imgur](https://i.imgur.com/Hw7PGiw.jpg?1)
+![](https://i.imgur.com/Hw7PGiw.jpg?1)
 
 ### Define state
 

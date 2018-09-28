@@ -11,7 +11,7 @@ As a developer, we write code day by day, try to handle many things, put all the
 
 <!-- more -->
 
-![Imgur](https://i.imgur.com/U1ahhBd.jpg)
+![](https://i.imgur.com/U1ahhBd.jpg)
 
 Almost of us know about the SOLID principle, some of us understood and rare of us think about it while we write down our code (I'm not on this group T.T). We all pay our attention on something like design pattern and think about it as the easiest way to know how good your code are, but if we focus on that think too much, the thing we created will become more messed than you think (in the case you can finish what you started).
 

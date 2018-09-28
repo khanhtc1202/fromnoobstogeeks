@@ -13,7 +13,7 @@ Từ cái ngày trẻ trâu copy icon half-life vào usb cho đến khi biết c
 
 Sự thần thánh của các package manager là không phải bàn cãi. Khi mới chuyển sang làm quen thử với bất cứ một bản distro nào mới, gần như việc đầu tiên mà bạn vô thức làm sẽ là kiểm tra xem package manager của distro đó là gì. Những cái tên không cần nhắc ai cũng biết đến như: `apt` cho debian base distro, `yum` cho redhat, `pacman` cho arch,... Những gói này được gọi là các `distribution package manager` (để phân biệt với 1 loại package manager nữa sẽ nói bên dưới).
 
-![Imgur](https://i.imgur.com/UeyPZjT.png)
+![](https://i.imgur.com/UeyPZjT.png)
 
 Đặc biệt hơn, khi các ngôn ngữ lập trình cũng đều học theo tư tưởng đó, xây dựng những build automation tool cực mạnh như `gradle` của java, `npm` của nodeJS,... Bản thân một phần nhiệm vụ quan trong mà những tool đó đều có chính là package (dependencies) management.
 

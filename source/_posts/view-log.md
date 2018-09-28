@@ -66,11 +66,11 @@ Có vẻ đã get stream thành công :)) giờ gán nó cho data stream của r
 
 Ở đây mình dùng `pipe()` để stream đọc được đang ở `stdout` của process sinh ra bởi spawn() được viết thẳng sang cho res (socket) :)) chắc cũng không hẳn là socket nhưng theo ý hiểu ở đây có thể coi nó gần giống như vậy :D lý do vì
 
-![Imgur](https://i.imgur.com/LucItFe.png?1)
+![](https://i.imgur.com/LucItFe.png?1)
 
 Như đã thấy trong hình trên, stream data của response chưa bắt được event end :)) lý do vì stdout của process đang chạy lệnh tail vẫn chưa hoàn thành (vì nó là tail mà :) ). Như vậy nếu bây giờ mình viết thêm gì đấy vào file log thì trên trình duyệt, nội dung của tab log mình đang xem cũng thay đổi luôn - quá tuyệt :)) thử nào...
 
-![Imgur](https://media.giphy.com/media/cm1SRZW8XOEGFZNy8V/giphy.gif)
+![](https://media.giphy.com/media/cm1SRZW8XOEGFZNy8V/giphy.gif)
 
 Bản `uncensored` có thể xem tại [đây](https://youtu.be/41XIFcZKfEU).
 
@@ -91,7 +91,7 @@ Không ổn!!! Thế này đọc log 100 lần thì có cả trăm cái process 
 
 Hiện trạng của cái log view như sau:
 
-![Imgur](https://i.imgur.com/vJbERcj.jpg)
+![](https://i.imgur.com/vJbERcj.jpg)
 
 Vấn đề hiện tại sẽ được giải quyết nếu bắt được trạng thái data stream của response bị terminated! Và rất may đây là nodejs :)) chẳng có gì ngoài event, do vậy vấn đề sẽ được giải quyết dễ dàng khi sửa đoạn code gán stream data như sau.
 
@@ -117,11 +117,11 @@ Vấn đề hiện tại sẽ được giải quyết nếu bắt được trạ
 
 Ok giờ thử lại nào! Đây là trạng thái của server khi có request đọc log đến.
 
-![Imgur](https://i.imgur.com/oxoyhf4.png)
+![](https://i.imgur.com/oxoyhf4.png)
 
 Và giờ thì thử ngắt nó đi :))))
 
-![Imgur](https://i.imgur.com/pkxmpfI.png)
+![](https://i.imgur.com/pkxmpfI.png)
 
 DONE!!!! Lần này thì có vẻ không còn vấn đề nào nữa :)))
 Định lười nhưng cuối cùng thành ra khá lòng vòng mới có thể giải quyết hết vấn đề @@ Nên nếu có cần đưa ra kết luận gì đó thì sẽ là đừng lười như mình, kết quả không tốt đẹp gì đâu :)))

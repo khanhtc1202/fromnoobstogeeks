@@ -17,7 +17,7 @@ Chắc hẳn là developer, không ai lạ lẫm gì với công cụ inspect c�
 
 Mọi chuyện sẽ chẳng có gì, nếu như hôm nay, trong khi đang tìm cách __lưu lại một số content đã hiển thị trên thiết bị cá nhân__, mình bắt gặp được một trường hợp khá thú vị như sau:
 
-![gif](https://thumbs.gfycat.com/DistantKindlyCub-size_restricted.gif)
+![](https://thumbs.gfycat.com/DistantKindlyCub-size_restricted.gif)
 
 Công cụ inspect của trình duyệt gần như đã bị khoá bởi việc liên tục nhảy vào debugging mode (giống như break point mà các ide hỗ trợ) - một cách khá thông minh :)) Bất cứ khi nào next step, sẽ có 1 debugging block mới được sinh ra và trình duyệt sẽ lại nhảy vào debugging mode, đồng thời theo đó, chức năng kiểm tra phần tử hay bắt request thông qua network cũng sẽ bị khoá (do trình duyệt đang dump).
 
@@ -99,11 +99,11 @@ RangeError: Maximum call stack size exceeded
     at c (recursion.js:7)
 ```
 
-![imgur](https://i.imgur.com/Yixr3jv.gif)
+![](https://i.imgur.com/Yixr3jv.gif)
 
 Ok đến đây coi như đã hiểu thêm được một cách block user khá thú vị, tuy nhiên content thì mình vẫn muốn lấy ( ͡° ͜ʖ ͡°) . Tất nhiên, khi đã mò được đến đoạn code gây ra kết quả trên thì __chỉ cần xoá nó đi__ là xong :)) Tuy nhiên còn một cách khác (và nó là nguyên nhân chính khiến mình viết bài này), đó là __dùng chính chức năng của browser__ - giống như cách mà dev "đối phương" dùng, lợi dụng tính năng debugger của browser!
 
-![Imgur](https://i.imgur.com/vylppVW.png)
+![](https://i.imgur.com/vylppVW.png)
 
 Đáp án ở ngay bên cạnh đề bài :)) Vị trí được trỏ đến trong ảnh là chức năng `Deactivate breakpoints` của browser, tất cả các breakpoint (bao gồm cả các breakpoint sinh ra từ sau do hiệu quả của vòng đệ quy bên trên) đều sẽ bị vô hiệu ( ͡° ͜ʖ ͡°) .
 

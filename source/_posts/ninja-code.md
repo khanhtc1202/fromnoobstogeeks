@@ -16,7 +16,7 @@ Trong khuôn khổ bài viết, đạo này được naming là __ninja đạo__
 
 # Đạo lý trong ninja đạo
 
-![Imgur](https://i.imgur.com/9gCBJvO.jpg)
+![](https://i.imgur.com/9gCBJvO.jpg)
 
 Chúng ta sẽ cùng điểm qua những giáo lý chủ đạo của đạo phái này. (chú ý, source code sử dụng trong bài viết là javascript, tuy nhiên mở rộng ra nó có thể là bất cứ ngôn ngữ nào, bởi môn sinh theo học ninja đạo là vô biên)
 
@@ -201,7 +201,7 @@ Ví dụ như function `validateEmail(email)` bên cạnh việc kiểm tra tín
 
 Những ninja giỏi biết cách giấu hàng tá logic vào trong code của họ, để không ai có thể đánh cắp chúng từ bên ngoài.
 
-![magic](https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif)
+![](https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif)
 
 __Kết hợp nhiều logic vào trong cùng một chỗ giúp bảo vệ code của bạn khỏi nguy cơ bị tái sử dụng.__
 
