@@ -33,5 +33,6 @@ My favorite quotes...
 ## Presentation
 
 - Paper reading festival (event of VAIJ community - 20180819). Slide go [here](https://slides.com/khanhtc/deck).
+- HMM at a glance. Slide go [here](https://slides.com/khanhtc/deck-1).
 
 To be continued...
