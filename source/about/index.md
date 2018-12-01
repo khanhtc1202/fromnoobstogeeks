@@ -27,6 +27,7 @@ My favorite quotes...
 - [Api generator](https://github.com/khanhtc1202/api-generator): Generate restful api from mongodb.
 - [Anime crawling system](https://github.com/khanhtc1202/animu-crawling-system): Crawling anime base on rss config.
 - [SFRM](https://github.com/khanhtc1202/sfrm): Safe linux rm command.
+- [Http-mock](https://github.com/khanhtc1202/http-mock): A package that help you create mock http call for unit test.
 
 ## Published services
 
