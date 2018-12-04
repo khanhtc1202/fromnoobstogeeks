@@ -33,7 +33,7 @@ void LNR(Tree T) {
 }
 ```
 
-Do quiz yêu cầu sử dụng `goroutine` - kết quả trả về từ goroutine cho main (có thể coi cũng là 1 goroutine khác) thống qua `channel` (các khái niệm đã nhắc đến trên đều được giải thích rất chi tiết trong [go tour](https://tour.golang.org/list) do đó không được nhắc lại trong bài viết nữa). Từ đó ta có implement đơn giản như sau:
+Do quiz yêu cầu sử dụng `goroutine` - kết quả trả về từ goroutine cho main (có thể coi cũng là 1 goroutine khác) thông qua `channel` (các khái niệm đã nhắc đến trên đều được giải thích rất chi tiết trong [go tour](https://tour.golang.org/list) do đó không được nhắc lại trong bài viết nữa). Từ đó ta có implement đơn giản như sau:
 
 ```golang
 func WalkRecursion(t *tree.Tree, ch chan int) {
