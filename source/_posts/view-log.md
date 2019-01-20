@@ -70,9 +70,7 @@ Có vẻ đã get stream thành công :)) giờ gán nó cho data stream của r
 
 Như đã thấy trong hình trên, stream data của response chưa bắt được event end :)) lý do vì stdout của process đang chạy lệnh tail vẫn chưa hoàn thành (vì nó là tail mà :) ). Như vậy nếu bây giờ mình viết thêm gì đấy vào file log thì trên trình duyệt, nội dung của tab log mình đang xem cũng thay đổi luôn - quá tuyệt :)) thử nào...
 
-![](https://media.giphy.com/media/cm1SRZW8XOEGFZNy8V/giphy.gif)
-
-Bản `uncensored` có thể xem tại [đây](https://youtu.be/41XIFcZKfEU).
+[![](https://media.giphy.com/media/cm1SRZW8XOEGFZNy8V/giphy.gif)](https://youtu.be/41XIFcZKfEU)
 
 Done!!! :)))) vậy là đã hoàn thành việc view log thông qua http, lại còn realtime nữa chứ :))))...
 
