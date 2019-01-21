@@ -3,7 +3,7 @@ title: About
 date: 2017-12-18 15:35:35
 ---
 
-## How I came to the world
+## How I came to this world
 ![](https://i.imgur.com/zAzcxjf.jpg)
 
 ## About my mindset
