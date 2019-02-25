@@ -4,8 +4,8 @@ node_js:
 addons:
   ssh_known_hosts: fromnoobstogeeks.com
 before_install:
-- sudo npm config set strict-ssl false
-- sudo npm install -g hexo
+- npm config set strict-ssl false
+- npm install -g hexo
 - wget https://github.com/jgm/pandoc/releases/download/2.3/pandoc-2.3-1-amd64.deb && sudo dpkg -i pandoc-2.3-1-amd64.deb
 - openssl aes-256-cbc -K $encrypted_936f9aa5c77b_key -iv $encrypted_936f9aa5c77b_iv
   -in deploy_rsa.enc -out deploy_rsa -d
