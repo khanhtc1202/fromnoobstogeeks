@@ -40,4 +40,21 @@ Có một cách đơn giản để biết một class là thể hiện của th�
 
 Về cơ bản, class nắm giữ cách tạo ra object trong môi trường object tồn tại, định nghĩa về object được xác định thông qua cách mà nó được tạo ra. Các tham số được truyền vào cho constructor và được encapsulate bởi object, nhằm định nghĩa object đó là thể hiện của thực thể nào trong môi trường.
 
-Và bây giờ, thử làm rõ hơn câu hỏi đã đề ra: __class nào trong 2 class HTTP đã đưa ra được thiết kế đúng?__ bằng cách thay nó bởi câu hỏi: __class nào thể hiện thực thể tốt hơn? web page hay the Universe?__
+Và bây giờ, thử làm rõ hơn câu hỏi đã đề ra: __class nào trong 2 class HTTP đã đưa ra được thiết kế đúng?__ bằng cách thay nó bởi câu hỏi: __class nào thể hiện thực thể tốt hơn? web page hay the Universe?__ Tuy nhiên có một điều chúng ta đã biết: trong phần lớn trường hợp, càng tập trung thể hiện một thực thể đủ nhỏ - ta nắm rõ bao nhiêu, object ta thiết kế ra càng bền vững và gắn kết (solid & cohesive) bấy nhiêu.
+
+Mặt khác, đôi khi chúng ta cũng cần những object thể hiện các thực thể có độ lớn như vũ trụ. Ví dụ như trong trường hợp class `HTTP` thứ hai bên trên:
+
+```java
+class HTTP {
+    public String read(String url) {
+        // read via HTTP and return
+    }
+    public boolean online() {
+        // check whether we're online
+    }
+}
+```
+
+Nó có thể không phải là một thiết kế tốt, tuy nhiên nó cần thiết nếu như muốn thể hiện những thực thể có kích thước vũ trụ. Một object của class `HTTP` trên có thể đọc thông tin từ bất cứ trang web nào trên internet (có lẽ số lượng cũng nhiều và đủ lớn để so sánh với kích thước vũ trụ?), và đồng thời biết cách kiểm tra xem trạng thái hiện tại của những trang web đó,...tất nhiên với một object là thể hiện của vũ trụ trong trường hợp này, không có gì giới hạn việc bạn thêm vào bao nhiêu hành vi cho nó cả :)). Trong trường hợp này, chúng ta thực sự không cần thiết phải encapsulate bất cứ gì vào trong nó.
+
+Tôi tin rằng, những object với thiết kế để thể hiện cho thực thể vũ trụ là những object có thiết kế không tốt! Một trong những lý do chính vì chúng ta chỉ có một vũ trụ (the Universe) - hay ít nhất, trong trường hợp nó có nhiều phiên bản, nó cũng khá tương tự nhau đối với chúng ta; tại sao chúng ta phải thiết kế nhiều thể hiện khác nhau cho nó chứ? :))
