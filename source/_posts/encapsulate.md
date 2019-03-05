@@ -1,5 +1,5 @@
 ---
-title: How much your objects encapsulate
+title: How much your objects encapsulate ?
 date: 2019-02-24 18:46:19
 tags: 
 - oop
