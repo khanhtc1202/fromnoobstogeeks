@@ -1,5 +1,5 @@
 ---
-title: Why cann't new abstract class (java)
+title: Why can't new abstract class (java)
 date: 2019-03-23 01:50:54
 tags:
 - oop
