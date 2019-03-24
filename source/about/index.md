@@ -16,7 +16,7 @@ My favorite quotes...
 
 > Learning questions level: what? -> why? -> how?
 
-> Good code don't make money!!! RELEASE FIRST!!!
+> Your code doesn't make money, your application does!!! RELEASE FIRST!!!
 
 ## My favorite books
 
