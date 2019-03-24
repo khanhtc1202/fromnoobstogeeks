@@ -16,6 +16,8 @@ My favorite quotes...
 
 > Learning questions level: what? -> why? -> how?
 
+> Good code don't make money!!! RELEASE FIRST!!!
+
 ## My favorite books
 
 - [The Subtle Art of Not Giving a F*ck](https://www.amazon.co.jp/dp/0062457713)
