@@ -6,7 +6,7 @@ tags:
 - golang
 ---
 
-Since we don’t have classes in go, you can say `struct` will do a job to make objects. So how 4 principles of object-oriented programming represent in golang? In this post, we will discuss about most interesting principle of OOP that make golang more better than other object oriented programming language: __inheritance__.
+Since we don’t have classes in go, you can say `struct` will do a job to make objects. So how 4 principles of object-oriented programming represent in golang? In this post, we will discuss about the principle of OOP that make golang more better than other object oriented programming language: __inheritance__.
 
 <!-- more -->
 
