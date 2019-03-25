@@ -10,7 +10,7 @@ Since we don’t have classes in go, you can say `struct` will do a job to make 
 
 <!-- more -->
 
-A simple question, how does Golang represent inheritance principles even if it doesn't have class? We can easily find out the answer of this question: __embedding type__
+A simple question, how does Golang represent inheritance principle even if it doesn't have class? We can easily find out the answer of this question: __embedding type__
 
 ```golang
 type Parent struct {
