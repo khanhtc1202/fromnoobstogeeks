@@ -24,7 +24,7 @@ type Child struct {
 
 Using the above code snippet, class Child can use all Parent's properties and methods directly, just like inheritance right? But with me, it's better than inheritance! Everyone who familiar with OOP thinking know about __composition over inheritance__ principle, which we `design objects that are simplified by identifying system object behaviors in separate interfaces instead of creating a hierarchical relationship to distribute behaviors among business-domain classes via inheritance`.
 
-The key of this design principle is that we implement `has-a` relationship in classes instead of `is-a` relationship. This way of thinking similar with the way we think about embedding type: just embed what we want where we want it!
+The key of this design principle is that we implement `has-a` relationship in classes instead of `is-a` relationship. Embedding is a representation of `has-a` relationship, just embed what we want where we want it!
 
 On the other hand, the interesting part is that we can embed as much as we want (not like inheritance, we can only extends one class due to the truth that we can only answer `is-a` question once).
 
