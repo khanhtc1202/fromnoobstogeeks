@@ -58,3 +58,5 @@ class HTTP {
 Nó có thể không phải là một thiết kế tốt, tuy nhiên nó cần thiết nếu như muốn thể hiện những thực thể có kích thước vũ trụ. Một object của class `HTTP` trên có thể đọc thông tin từ bất cứ trang web nào trên internet (có lẽ số lượng cũng nhiều và đủ lớn để so sánh với kích thước vũ trụ?), và đồng thời biết cách kiểm tra xem trạng thái hiện tại của những trang web đó,...tất nhiên với một object là thể hiện của vũ trụ, không có gì giới hạn việc bạn thêm vào bao nhiêu hành vi cho nó cả :)). Trong trường hợp này, chúng ta thực sự không cần thiết phải encapsulate bất cứ gì vào trong nó.
 
 Tôi tin rằng, __những object với thiết kế để thể hiện cho thực thể vũ trụ là những object có thiết kế không tốt!__ Một trong những lý do chính vì chúng ta chỉ có một vũ trụ (the Universe) - hay ít nhất, trong trường hợp nó có nhiều phiên bản, nó cũng khá tương tự nhau đối với chúng ta; tại sao chúng ta phải thiết kế nhiều thể hiện khác nhau cho nó chứ? :))
+
+Tham khảo: https://www.yegor256.com/2014/12/15/how-much-your-objects-encapsulate.html
