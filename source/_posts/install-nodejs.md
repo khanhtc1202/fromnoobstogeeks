@@ -32,7 +32,7 @@ $ rm -f /usr/local/bin/npm /usr/local/lib/dtrace/node.d ~/.npm
 $ # reinstall node
 $ brew install node
 ```
-
+
 Cứ nghĩ là đến đây là êm xuôi...nhưng mọi chuyện lại không đơn giản như vậy :( Tại thời điểm lúc đó, brew tool đang có lỗi trong cài đặt gói `npm` - gói đi kèm khi cài đặt `node`. Vấn đề có vẻ nằm ở chính việc cố gắng update npm bằng lệnh `npm update npm -g` theo như giải thích ở [đây](https://gist.github.com/DanHerbert/9520689). Nguyên văn đoạn cần đọc 
 
 > The root of the the issue is really that npm is its own package manager and it is therefore better to have npm manage itself and its packages completely on its own instead of letting Homebrew do it.
