@@ -1,11 +1,12 @@
 menu:
     Blog: /
     Archive: /archives/
+    About: /about/
     GitHub: https://github.com/khanhtc1202
     Rss: /atom.xml
 
-favicon: /favicon.png
-logo: /favicon.png
+favicon: /images/larry-hi.png
+logo: /images/larry-hi.png
 
 # Comment
 # e.g disqus: seansun
