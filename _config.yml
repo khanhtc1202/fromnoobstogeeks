@@ -76,6 +76,10 @@ pagination_dir: page
 # theme: next
 theme: apollo
 
+# override to show all post in archive
+archive_generator:
+  per_page: 0
+
 # Comment
 # disqus_shortname: fromnoobstogeeks
 
