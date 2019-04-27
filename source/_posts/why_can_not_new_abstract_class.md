@@ -7,7 +7,7 @@ tags:
 - design
 ---
 
-Difference between Abstract class and Interface is one of the most be confused problem when the first time I learnt Java. In which case we should use Abstract class and which case we should use Interface? Let's take a look deeper in this two of concepts.
+Difference between Abstract class and Interface is one of the most be confused problem when the first time I learnt Java. In which case we should use Abstract class and which case we should use Interface? Let's take a deeper look in this two of concepts.
 
 <!-- more -->
 
