@@ -73,7 +73,8 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: flexy-mod
-theme: next
+# theme: next
+theme: apollo
 
 # Comment
 # disqus_shortname: fromnoobstogeeks
