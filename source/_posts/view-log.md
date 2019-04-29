@@ -7,7 +7,7 @@ tags:
 - nodejs
 ---
 
-Nhân một cuối tuần rảnh rỗi cao hứng nào đấy, mình đã build một hệ thống nhỏ - mục đích chính để nó giúp mình `clone tự động anime mới` từ các trang mình đã thu thập rss (phần vì mình lười down từng tập, phần do đợt này mình hay quên nên @@). 
+Nhân một cuối tuần rảnh rỗi cao hứng nào đấy, mình đã build một hệ thống nhỏ - mục đích chính để nó giúp mình `clone tự động anime mới` từ các trang mình đã thu thập rss (phần vì mình lười down từng tập, phần do đợt này mình hay quên nên @@).
 
 Do là cái hệ thống viết chơi bời trong 2 ngày nghỉ nên nó thiếu đủ thứ m(- -)m... Lúc đầu, mình chỉ tập trung vào viết cho nó chạy, nhưng thời gian đầu - do một số lý do khó nói - mà nó chết sập liên tục @@ mình bắt đầu nghĩ đến logging, tất nhiên là log ra file thôi...Sau đấy một thời gian khi đã chạy khá ổn định, dần dần bản thân việc `mò vào server để mở file log ra đọc` mình cũng lười nốt m(- -)m nên bắt đầu nghĩ xem có cách nào đơn giản (không phải cài hay dùng thêm dịch vụ ngoài nào) mà có thể giúp xem luôn log file ở server từ trình duyệt không :)) 
 

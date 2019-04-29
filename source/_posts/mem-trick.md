@@ -8,7 +8,7 @@ tags:
 - memory
 ---
 
-Nếu đã từng có thời gian làm việc với C (hay ông nào kinh hơn làm hẳn với Assembly :) ) chắc ai cũng nhớ sự kinh hoàng của **core dump fail** :'( . Dù có sử dụng [`gdb`](https://en.wikipedia.org/wiki/GNU_Debugger) debug thì chắc cũng phải bỏ ra cả mớ thời gian và công sức mà nhiều khi lỗi bắt nguồn từ những cái vớ vẩn nào đó mà bình thường ta không để ý :'( . Mặt khác bạn nên thấy may mắn khi ít ra còn biết chương trình đã lỗi ở đâu đó để mà sửa, có những lỗi nằm ở nhưng nơi hiểm hơn - không làm cho chương trình dừng nhưng kết quả thì sai lè. Một trong số những nguyên nhân chính dẫn đến nó là vấn đề [`tràn số`](https://en.wikipedia.org/wiki/Overflow)
+Nếu đã từng có thời gian làm việc với C (hay ông nào kinh hơn làm hẳn với Assembly :) ) chắc ai cũng nhớ sự kinh hoàng của **core dump fail** :'( . Dù có sử dụng [`gdb`](https://en.wikipedia.org/wiki/GNU_Debugger) debug thì chắc cũng phải bỏ ra cả mớ thời gian và công sức mà nhiều khi lỗi bắt nguồn từ những cái vớ vẩn nào đó mà bình thường ta không để ý :'( . Mặt khác bạn nên thấy may mắn khi ít ra còn biết chương trình đã lỗi ở đâu đó để mà sửa, có những lỗi nằm ở nhưng nơi hiểm hơn - không làm cho chương trình dừng nhưng kết quả thì sai lè. Một trong số những nguyên nhân chính dẫn đến nó là vấn đề [`tràn số`](https://en.wikipedia.org/wiki/Overflow)
 
 <!-- more -->
 
