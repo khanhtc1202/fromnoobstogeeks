@@ -20,7 +20,7 @@ date: 2019-05-01 15:35:35
 
 Personal #til notes go [here](https://github.com/khanhtc1202/til/issues).
 
-## Presentation
+## Presentations
 
 - Paper reading festival (event of VAIJ community - 20180819). Slide go [here](https://slides.com/khanhtc/deck).
 - HMM at a glance. Slide go [here](https://slides.com/khanhtc/deck-1).
