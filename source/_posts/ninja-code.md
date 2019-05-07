@@ -28,7 +28,7 @@ Chúng ta sẽ cùng điểm qua những giáo lý chủ đạo của đạo ph�
 
 Code của bạn __càng ngắn gọn, bạn càng thông minh__ hơn thằng ngồi ở block bên cạnh.
 
-Lấy ví dụ, tất cả chúng ta từ khi bắt đầu học lập tình đều biết đến phép toán `?` và cách nó biến đổi biểu thức điều kiện if về dạng oneline kì diệu như thế nào.
+Lấy ví dụ, tất cả chúng ta từ khi bắt đầu học lập trình đều biết đến phép toán `?` và cách nó biến đổi biểu thức điều kiện if về dạng oneline kì diệu như thế nào.
 
 Xem ví dụ bên dưới:
 
