@@ -15,6 +15,7 @@ date: 2019-05-01 15:35:35
 ## Published services
 
 - [Verbal Regex](https://verbalregex.com): Regular expression made easy.
+- [Boogeyman](https://search.khanhtc.me): Extra search interface - powered by [Boogeyman](https://github.com/khanhtc1202/boogeyman).
 
 ## TIL
 
