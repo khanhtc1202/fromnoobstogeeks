@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="en_US"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Memory trick · From Noobs To Geeks</title><meta name="description" content="Memory trick - khanhtc"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/images/larry-hi.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://fromnoobstogeeks.com/atom.xml" title="From Noobs To Geeks"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/images/larry-hi.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/projects/" target="_self" class="nav-list-link">PROJECTS</a></li><li class="nav-list-item"><a href="https://github.com/khanhtc1202" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Memory trick</h1><div class="post-info">Dec 22, 2017</div><div class="post-content"><p>Nếu đã từng có thời gian làm việc với C (hay ông nào kinh hơn làm hẳn với Assembly :) ) chắc ai cũng nhớ sự kinh hoàng của <strong>core dump fail</strong> :'( . Dù có sử dụng <a href="https://en.wikipedia.org/wiki/GNU_Debugger" target="_blank" rel="noopener"><code>gdb</code></a> debug thì chắc cũng phải bỏ ra cả mớ thời gian và công sức mà nhiều khi lỗi bắt nguồn từ những cái vớ vẩn nào đó mà bình thường ta không để ý :'( . Mặt khác bạn nên thấy may mắn khi ít ra còn biết chương trình đã lỗi ở đâu đó để mà sửa, có những lỗi nằm ở nhưng nơi hiểm hơn - không làm cho chương trình dừng nhưng kết quả thì sai lè. Một trong số những nguyên nhân chính dẫn đến nó là vấn đề <a href="https://en.wikipedia.org/wiki/Overflow" target="_blank" rel="noopener"><code>tràn số</code></a></p>
+<a id="more"></a>
+<p>Hôm nay trong khi đang mò code hệ thống, mình vớ được 1 đoạn đại ý như sau.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Same as (l+r)/2, but avoids overflow for</span></span><br><span class="line"><span class="comment">// large l and h</span></span><br><span class="line"><span class="keyword">int</span> m = l+(r-l)/<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+<p>Không còn gì để nói thêm ngoài tuyệt vời :joy:</p>
+<p>Đoạn code trên làm nhiệm vụ tính <strong>trung bình cộng của 2 số l và r</strong> với giả thiết đầu vào là <strong>l nhỏ hơn hoặc bằng r</strong></p>
+<p>Thông thường khi nghĩ đến tính trung bình cộng, bạn cho rằng đơn giản chỉ cần <strong>cộng chúng lại và chia cho số số hạng</strong> nhưng chính phần đơn giản đó khiến cho chúng ta nhiều lúc <a href="https://i.ytimg.com/vi/Uvw0xNSj0H0/maxresdefault.jpg" target="_blank" rel="noopener"><code>mất ngủ đến mấy ngày :)</code></a> (cái này gợi nhớ đến dấu <code>;</code> thần thánh hoặc <code>}</code> mà chắc ai cũng đã dính rồi :joy: ).</p>
+<p>Bạn cũng có thể dễ dàng dính tràn số với những đoạn code kiểu này - mà mình nghĩ chắc cũng không ít người vẫn làm thế :)) bao gồm cả người đang viết bài này :'(</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; length; i++) &#123;</span><br><span class="line">    sum += <span class="built_in">array</span>[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Việc thực hiện phép cộng bừa bãi nhiều khi thực sự gây ra những hậu quả bất ngờ khi đem chạy thuật toán với các test case lớn (ai chơi codejam chắc biết rõ vụ này).</p>
+<p>Đoạn code mình vớ được hôm nay đem đến 1 ý tưởng không mới (chắc ai cũng biết nhưng chẳng mấy để ý) về vụ tránh lỗi tràn số nói trên.</p>
+<p><span class="math display">\[\begin{equation}
+\dfrac{l + r}{2}
+= \dfrac{2l + r - l}{2}
+= \dfrac{l + (r - l)}{2}
+\end{equation}\]</span></p>
+<p>Một biến đổi khá đơn giản nhưng đã tránh hoàn toàn được vấn đề <strong>overflow</strong> nói trên. Chú ý rằng với giả thiết đầu vào là <strong>l nhỏ hơn bằng r</strong> ta luôn có <strong>(r - l)</strong> nằm trong range cho phép của kiểu mẫu, đơn giản là vì bạn đã <strong>load được r vào bộ nhớ thì chẳng có lý do gì không load được (r - l) &lt; r vào đó cả</strong> :).</p>
+<p>Tổng quát lên một chút ta có với giả thiết <span class="math inline">\(X_{1} &lt; X_{2} &lt; ... &lt; X_{n}\)</span> cùng phía so với 0</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+\dfrac{X_{1} + X_{2} + ... + X_{n}}{n} 
+&amp;= \dfrac{nX_{1} + (X_{2} - X_{1}) + ... + (X_{n} - X_{1})}{n} \\
+&amp;= X_{1} + \dfrac{(X_{2} - X_{1}) + ... + (X_{n} - X_{1})}{n} \\
+&amp;= X_{1} + \sum_{k=2}^n{\dfrac{X_{k} - X_{1}}{n}}
+\end{aligned}
+\end{equation}\]</span></p>
+<p>Và với cách này thì bạn có thể thoải mái và yên tâm là không có chuyện tràn số nữa dù test dataset có lớn lên hay không :)).</p>
+</div></article></div></main><footer><div class="paginator"><a href="/2018/03/26/compile-c-source/" class="prev">PREV</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'fromnoobstogeeks';
+var disqus_identifier = '2017/12/22/mem-trick/';
+var disqus_title = 'Memory trick';
+var disqus_url = 'https://fromnoobstogeeks.com/2017/12/22/mem-trick/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//fromnoobstogeeks.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 - 2019 <a href="https://fromnoobstogeeks.com">khanhtc</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en_US"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Compile C program in manual way · From Noobs To Geeks</title><meta name="description" content="Compile C program in manual way - khanhtc"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/images/larry-hi.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://fromnoobstogeeks.com/atom.xml" title="From Noobs To Geeks"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/images/larry-hi.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/projects/" target="_self" class="nav-list-link">PROJECTS</a></li><li class="nav-list-item"><a href="https://github.com/khanhtc1202" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Compile C program in manual way</h1><div class="post-info">Mar 26, 2018</div><div class="post-content"><p>After hard coding your program hour by hour (sometime, it becomes year by year :) ), one of the most uncomfortable time is compiling it into executable file. As usually, we are going to compile a program by the hardest way to do it, just because it will make us knows that in some case, <code>gcc</code> is really a hero :))</p>
+<p>The post's content is about compiling a C program by manual way. In that program, we use an external lib, defined by yourself.</p>
+<a id="more"></a>
+<h2 id="using-static-libraries">Using static libraries</h2>
+<p>Create new static library as following steps:</p>
+<ol type="1">
+<li>Create new header file <code>.h</code> (where we declare functions).</li>
+<li>Create new source file <code>.c</code> (where we define functions, the name of source file and header file has no relation convention, but it's better if they have the same name).</li>
+<li><p>Compile lib to binary file <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ gcc -c lib_mylib.c -o lib_mylib.o</span><br></pre></td></tr></table></figure></p></li>
+<li><p>Create static library <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ar rcs lib_mylib.a lib_mylib.o</span><br></pre></td></tr></table></figure></p></li>
+<li><p>Using this compiled static lib in another C source code by using <code>#include</code>. More about compile go <a href="#manual-compile-c-source-file">here</a>.</p></li>
+</ol>
+<p>Note: the name of static libary follows this name convention: <code>lib_namegohere.a</code></p>
+<h2 id="using-dynamic-libraries">Using dynamic libraries</h2>
+<p>Dynamic Linking doesn’t require the code to be copied, it is done by just placing name of the library in the binary file. The actual linking happens when the program is run, when both the binary file and the library are in memory. Examples of Dynamic libraries (libraries which are linked at run-time) are, <code>.so</code> in Linux and <code>.dll</code> in Windows.</p>
+<h2 id="manual-compile-c-source-file">Manual compile C source file</h2>
+<p>Compile a program written by C follows the 4 steps:</p>
+<ol type="1">
+<li>Preprocessing</li>
+<li>Assembly Code Compiling</li>
+<li>Machine Code Compiling</li>
+<li>Linking</li>
+</ol>
+<p>As usually we run <code>gcc source.c -o exec-bin-file</code> to compile the C program. It makes the result of 3 steps above come unseen, we can run this step by step as below.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ gcc -E source.c -o source.i</span><br><span class="line">$ gcc -S source.i -o source.s</span><br><span class="line">$ as source.s -o source.o</span><br><span class="line">$ ld source.o -o <span class="built_in">exec</span> more-config-flag-go-here</span><br></pre></td></tr></table></figure>
+<p>Note the <code>more-config-flag-go-here</code> mean that if we manual linking object file, we must specific some input params to make sure that we pointed to needed libs.</p>
+<p>We can using <code>gcc</code> command with <code>--save-temps</code> param to get the result of 3 steps above.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ gcc --save-temps -o <span class="built_in">exec</span> source.c</span><br></pre></td></tr></table></figure>
+<h2 id="compile-c-source-file-with-exeternal-libs">Compile C source file with exeternal libs</h2>
+<p>As above, we can compile the C program as usually till <code>step 4</code>. We must link the external libs to C source compiled o-code file.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ gcc -c source.c -o source.o</span><br><span class="line">$ gcc -o <span class="built_in">exec</span> source.o -L. -l_mylib</span><br></pre></td></tr></table></figure>
+<p>with - <code>-L.</code> mean the dir which have static compiled libs (in this case it <code>./</code>) - <code>-l_mylib</code> mean the needed lib's name is <code>lib_mylib.a</code> as the above convention.</p>
+<p>Note: after the command create <code>.o</code> file be completed, we don't need header files any more, all are compiled and compressed into <code>.o</code> file. So in this opinion, the header file just like <code>interface</code> in oop language, we declare what we need, implementation will be written in another source file and compiled to libs, we linking it to main <code>.o</code> file and build executable file later.</p>
+<p>So if we are going to use an external lib, we just download header files, include it into source code. In compile time, we download binary file of libs, and give it to <code>gcc</code> to link libs in linking step.</p>
+<p>The above is the way we make an compiled executable file with static libs, the executable itself can run, no need any other libs link to it in run time. We also have the way to make this with dynamic libs (mean that in runtime, the exec file call some external libs to get implementation of needed funtions). Both of strategies have advantages and disadvantages points, so just think about it before compile your program.</p>
+<p>Source code sample go <a href="https://github.com/khanhtc1202/c-advance/tree/master/tricks/libs-build" target="_blank" rel="noopener">here</a>.</p>
+<p>Reference to:</p>
+<ul>
+<li><p>https://kipalog.com/posts/Thu-thuc-hien-4-Stage-khi-Compile-C-bang-GCC</p></li>
+<li><p>https://www.geeksforgeeks.org/static-vs-dynamic-libraries/</p></li>
+<li><p>https://www.geeksforgeeks.org/working-with-shared-libraries-set-1/</p></li>
+<li><p>https://www.geeksforgeeks.org/working-with-shared-libraries-set-2/</p></li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2018/03/30/view-log/" class="prev">PREV</a><a href="/2017/12/22/mem-trick/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'fromnoobstogeeks';
+var disqus_identifier = '2018/03/26/compile-c-source/';
+var disqus_title = 'Compile C program in manual way';
+var disqus_url = 'https://fromnoobstogeeks.com/2018/03/26/compile-c-source/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//fromnoobstogeeks.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 - 2019 <a href="https://fromnoobstogeeks.com">khanhtc</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>

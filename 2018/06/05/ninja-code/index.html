@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="en_US"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Ninja Code · From Noobs To Geeks</title><meta name="description" content="Ninja Code - khanhtc"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/images/larry-hi.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://fromnoobstogeeks.com/atom.xml" title="From Noobs To Geeks"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/images/larry-hi.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li><li class="nav-list-item"><a href="/projects/" target="_self" class="nav-list-link">PROJECTS</a></li><li class="nav-list-item"><a href="https://github.com/khanhtc1202" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Ninja Code</h1><div class="post-info">Jun 5, 2018</div><div class="post-content"><p>Nếu coding giống như một trận chiến giữa programer và problem cần giải quyết thì, giống như những chiến binh thực thự, chúng ta tìm kiếm đạo (phương pháp chiến đấu) phù hợp cho chính mình. Trong bạt ngàn những đạo (những nguyên lý), kinh dịch (article trên blog của những blogger nổi tiếng), chú thích kinh nghiệm (những note, post được đông đảo dev <code>kip</code> lại),...đâu đó quanh đây vẫn tồn tại một đạo mà không mấy ai để ý đến nhưng số người theo thì đếm không kể hết. Có người đắc đạo hoàn toàn, có người một phần, tuy theo nhiều mức độ khác nhau nhưng tựu chung có thể coi đều là đồng đạo trong môn phái này :))</p>
+<a id="more"></a>
+<blockquote>
+<p>Chú ý: Bài viết lược dịch từ <a href="https://javascript.info/ninja-code" target="_blank" rel="noopener">đây</a>. Đối với tôi, không có từ nào nhận xét tốt hơn cho bản gốc của bài viết này ngoài 2 chữ <code>tuyệt vời</code> :)).</p>
+</blockquote>
+<p>Trong khuôn khổ bài viết, đạo này được naming là <strong>ninja đạo</strong> - người theo đạo được naming là các ninja (ninja đắc đạo là những ninja tuân thủ nghiêm ngặt theo những đạo lý được liệt kê trong bài viết này).</p>
+<h1 id="đạo-lý-trong-ninja-đạo">Đạo lý trong ninja đạo</h1>
+<p><img src="https://i.imgur.com/9gCBJvO.jpg"></p>
+<p>Chúng ta sẽ cùng điểm qua những giáo lý chủ đạo của đạo phái này. (chú ý, source code sử dụng trong bài viết là javascript, tuy nhiên mở rộng ra nó có thể là bất cứ ngôn ngữ nào, bởi môn sinh theo học ninja đạo là vô biên)</p>
+<blockquote>
+<p>Rất nhiều môn sinh theo ninja đạo. Chỉ một số ít thành công.</p>
+<p><cite>Confucius</cite></p>
+</blockquote>
+<h2 id="ngắn-gọn-là-đích-đến-của-sự-thông-tuệ">Ngắn gọn là đích đến của sự thông tuệ</h2>
+<p>Code của bạn <strong>càng ngắn gọn, bạn càng thông minh</strong> hơn thằng ngồi ở block bên cạnh.</p>
+<p>Lấy ví dụ, tất cả chúng ta từ khi bắt đầu học lập trình đều biết đến phép toán <code>?</code> và cách nó biến đổi biểu thức điều kiện if về dạng oneline kì diệu như thế nào.</p>
+<p>Xem ví dụ bên dưới:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// taken from a well-known javascript library</span></span><br><span class="line">i = i ? i &lt; <span class="number">0</span> ? Math.max(<span class="number">0</span>, len + i) : i : <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+<p>Một ninja đạt cảnh giới cao viết những block code tuyệt vời như vậy! Sẽ chẳng có vấn đề gì nếu nó nằm sâu ngàn lớp trong một thư viện <strong>high performance</strong> nào đó, nhưng điều gì sẽ xảy ra nếu người động đến đoạn code này là một môn sinh trẻ tuổi? Hẳn là môn sinh non nớt đó sẽ phải bỏ ra kha khá thời gian để bắt được giá trị của <code>i</code> khi muốn debug đoạn code này.</p>
+<p>Và rồi đến khi không thể tìm ra lời giải thích thoả đáng cho cái lỗi hắn đang phải debug, hắn sẽ tìm đến bạn (một ninja cảnh giới cao hơn) để hỏi về nó, hãy nói với hắn &quot;Ngắn hơn luôn tốt hơn!&quot;, mở cho anh ta con đường đến với ninja đạo.</p>
+<h2 id="biến-số-một-chữ-cái">Biến số một chữ cái</h2>
+<blockquote>
+<p>Người Dao ẩn mình bằng sự im lặng. Cái gì người Dao đã bắt đầu, chỉ người Dao biết cách kết thúc nó.</p>
+<p><cite>Laozi (Tao Te Ching)</cite></p>
+</blockquote>
+<p>Đối với một ninja, không gì quan trọng hơn là kĩ năng ẩn mình. Vậy kĩ năng ẩn mình của một ninja đắc đạo thể hiện ở đâu? Nó thể hiện từ những thứ nhỏ nhất như là tên biến...</p>
+<p>Đặt tên biến <code>một-chữ-cái</code> (như là <code>a</code>, <code>b</code> hay <code>c</code>) giúp các ninja thượng đẳng tăng tốc độ code một cách đáng kể!</p>
+<p>Tên biến một chữ cái trong 1 block code giống như những ninja ẩn trốn trong rừng cây. Không ai có thể tìm ra họ! Kể cả công cụ search của editor (<code>ctrl+F</code> hoặc <code>cmd+F</code>) cũng phải đầu hàng trước những biến này. Mặt khác kể cả khi tìm ra, không ai (trừ gã <code>người Dao</code> bên trên) biết được ý nghĩa của biến <code>a</code> hay <code>b</code> đó là gì.</p>
+<p>...Tuy nhiên vẫn có một ngoại lệ. Một ninja đắc đạo sẽ không bao giờ dùng biến một-chữ-cái như <code>i</code> để làm biến đếm trong vòng <code>for</code>. Lý do tại sao à, đơn giản là vì còn rất nhiều lựa chọn khác ngoài <code>i</code>, như <code>x</code> hay <code>y</code> chẳng hạn.</p>
+<p>Một ninja thực thụ sẽ không bao giờ để biến của anh ta dễ dàng bị bắt chỉ bởi dùng một chữ cái ai cũng biết như <code>i</code> được. Và đặc biệt, khi độ dài của vòng <code>loop</code> đó lên đến 1-2 trang (trang ở đây chỉ độ dài hiển thị source code trên một màn hình - nếu có thể, hãy cố gắng làm cho vòng for của bạn dài đến 3 trang, điều này giúp biến của bạn ẩn mình tốt hơn), khi đó bạn đã ngộ được nguyên lý để ẩn mình thực sự.</p>
+<h2 id="rút....gọn">Rút....gọn</h2>
+<p>Nếu team của bạn có quy định về cấm sử dụng biến một-chữ-cái hoặc tên-vô-nghĩa, hãy lách luật bằng cách rút gọn chúng.</p>
+<p>Một số ví dụ như: - list → lst. - userAgent → ua. - browser → brsr. - …etc</p>
+<p>Phải là một ninja đắc đạo hoặc là có trực giác tốt mới có thể hiểu được ý nghĩa ẩn giấu dưới những cái tên này. Hãy cố gắng rút gọn mọi thứ, nó là một lớp lọc rất tốt. Chỉ những người thực sự có năng lực mới có thể hiểu và có quyền động vào source code của bạn.</p>
+<h2 id="trừu-tượng-là-mục-tiêu">Trừu tượng là mục tiêu</h2>
+<blockquote>
+<p>The great square is cornerless The great vessel is last complete, The great note is rarified sound, The great image has no form.</p>
+<p><cite>Laozi (Tao Te Ching)</cite></p>
+</blockquote>
+<p>Khi đặt tên biến, trong hàng trăm lựa chọn, hay chọn cái tên trừu tượng nhất. Giống như obj, data, value, item, elem,...etc.</p>
+<ul>
+<li>Cái tên lý tưởng để đặt cho bất cứ biến nào là <code>data</code>, lý do đơn giản vì nó là từ chính xác nhất để miêu tả nhiệm vụ của biến - lưu trữ data!</li>
+</ul>
+<p>Nhưng làm thế nào khi cái tên <code>data</code> đã bị một ninja khác trong team dùng mất? Hãy thử <code>value</code>! Sau cùng thì mọi biến đều sẽ nhận một giá trị nào đó, nên cái tên value là hoàn toàn có thể chấp nhận được.</p>
+<ul>
+<li>Mặt khác, bạn hoàn toàn có thể đặt tên cho biến bằng loại giá trị mà biến đó lưu. Ví dụ như: <code>str</code>, <code>num</code>,...</li>
+</ul>
+<p>Một môn sinh trẻ tuổi có thể ban đầu cảm thấy lạc lõng và tự hỏi kĩ năng đặt tên biến như trên có thực sự giúp ích cho một ninja? Hãy tự tin và nói với anh ta &quot;chắc chắn rồi!&quot;.</p>
+<p>Thật vậy, những cái tên trên thực sự vẫn mang trong nó ý nghĩa: <code>str</code> thể hiện biến đó đang lưu một chuỗi gì đó, <code>num</code> sẽ lưu một số,... Nhưng khi có ai đó bên ngoài thử cố gắng hiểu đoạn code của bạn, họ sẽ bất ngờ nhận ra cái tên đó chẳng mang một ý nghĩa cụ thể nào cả :)) họ sẽ phải từ bỏ việc đào bới đoạn code và như vậy biến cùng với logic của bạn được <strong>an toàn</strong> là của bạn.</p>
+<p>Không có cách nào để thực sự hiểu được đoạn code của bạn - một ninja thượng đẳng - ngoại trừ việc dành nhiều thời gian cho nó và phải thực sự tĩnh tâm :)) Bạn sẽ bất ngờ về khả năng đọc code của môn sinh mới sau vài tháng luyện tập.</p>
+<ul>
+<li>Vậy phải làm gì khi hầu hết những cái tên phía trên đều rất dễ bị một ninja khác trước bạn dùng mất? Đơn giản, chỉ cần <strong>THÊM SỐ VÀO</strong> : <code>data1</code>, <code>data2</code>, <code>value3</code>, <code>str4</code>,...etc.</li>
+</ul>
+<h2 id="kiên-định">Kiên định</h2>
+<p>Sự tập trung cũng là một trong những yếu tố phân định đẳng cấp của một ninja! Chỉ những ninja đã thực sự tập trung và kiên nhẫn mới đủ tư cách đi cùng những ninja thượng đẳng khác. Vậy làm cách nào để thử thách họ - những môn sinh non trẻ?</p>
+<p>Một cách đơn giản, hãy <strong>sử dụng những cặp tên dễ nhầm lẫn đặt tên biến</strong> như là <code>data</code> &amp; <code>date</code>. Sau đó mix chúng lại với nhau! Sẽ không ai có thể nhanh chóng đọc được source code của bạn, và rồi khi có lỗi typo (lỗi đánh máy) Uhm...chúng ta sẽ còn kẹt ở đây khá lâu, một tách trà trước khi tiếp tục không phải một ý tưởng tồi...</p>
+<h2 id="tiền-tố">Tiền tố</h2>
+<blockquote>
+<p>Rất khó để có thể bắt được con mèo đen trong một căn phòng tối. Nhất là khi trong đó chẳng có con mèo nào.</p>
+<p><cite>Confucius</cite></p>
+</blockquote>
+<p>Sử dụng những từ gần nghĩa là một cách khẳng định khả năng suy nghĩ linh hoạt và sáng tạo của một ninja thượng đẳng. Nó cũng làm cho code của team trở nên thú vị hơn rất nhiều :))</p>
+<p>Xem xét ví dụ về tiền tố trong đặt tên. Khi muốn viết hàm hiển thị thông tin lên màn hình - hãy đặt tên nó với tiền tố <code>display</code>...chẳng hạn <code>displayMessage</code>!!! Khi có một chức năng khác cần hiển thị một cái gì đó khác lên màn hình, cố gắng tìm một từ gần nghĩa tương tự chẳng hạn <code>showName</code>!</p>
+<p>Nhấn mạnh rằng có sự khác biệt tinh tế giữa các chức năng như vậy, trong khi không có sự khác biệt nào. Hoặc theo một hướng khác, hãy thử thảo luận và đưa ra một hiệp ước với các ninja đồng đội: Nếu như đối với chức năng hiển thị, A sẽ viết các function với tên bắt đầu bằng <code>display</code>, B sẽ bắt đầu bằng <code>render</code> còn bạn sẽ bắt đầu bằng...<code>paint</code> chẳng hạn. Càng nhiều ý tưởng, code của team sẽ càng đa dạng, môn sinh mới gia nhập càng có thêm ví dụ để thực hành. Vậy là bạn đã có sáng tạo của riêng mình và tiến thêm được một bước trên con đường ninja đạo.</p>
+<p>...Và bây giờ là thời gian dành cho mẹo vặt!</p>
+<p>Nếu đã <strong>đặt tiền tố khác nhau cho những chức năng tương tự nhau</strong>, còn gì cản bước bạn không thực hiện nốt phần còn lại: <strong>đặt tên tiền tố giống nhau cho những chức năng không mấy liên quan đến nhau</strong>?</p>
+<p>Ví dụ, hàm <code>printPage(page)</code> sẽ sử dụng máy in, in trang hiện tại. Và hàm <code>printText(text)</code> sẽ hiển thị văn bản lên màn hình. Hãy để môn sinh xa lạ khi nghĩ về chức năng <code>printMessage(message)</code> - một cái tên cùng tiền tố - “Nó đặt thông điệp ở đâu? Để máy in hoặc trên màn hình? ”. Sẽ là một môn sinh đầy triển vọng nếu anh ta có thể làm cho nó thực sự tỏa sáng bằng một ý tưởng: <code>printMessage(message)</code> nên xuất nó trong cửa sổ mới!</p>
+<h2 id="tái-sử-dụng-tên-biến-hàm...">Tái sử dụng tên (biến, hàm,...)</h2>
+<blockquote>
+<p>Once the whole is divided, the parts need names. There are already enough names. One must know when to stop.</p>
+<p><cite>Laozi (Tao Te Ching)</cite></p>
+</blockquote>
+<p>Một ninja giỏi biết cách tăng tối đa hiệu quả sử dụng bộ nhớ bằng cách <strong>chỉ tạo biến mới khi thực sự cần thiết</strong>!</p>
+<p>Một mặt tích cực khác là bạn đỡ tốn thời gian naming cho biến mới. Do đó tốt hơn cả là sử dụng lại biến với những cái tên đã có, chỉ cần <strong>thay giá trị mới cho chúng</strong>.</p>
+<p>Một ninja thượng đẳng có thể viết ra những function hàng chục dòng logic mà chỉ sử dụng các biến được <strong>truyền vào dưới dạng tham số</strong>. Một môn sinh mới sẽ cảm thấy khó khăn để xác định được chính xác giá trị tại thời điểm hiện tại của một biến nào đó, hay biến đó đến từ đâu. Một người có trực giác yếu sẽ phải phân tích đoạn mã theo từng dòng, theo dõi sự thay đổi qua mỗi nhánh mã và sau cùng tuyệt vọng chạy thử đoạn mã trên giấy...</p>
+<p>Một biến thể cao cấp của kĩ năng này là thử tráo (tạo clone) của biến đó bên trong vòng loop hoặc function. Những môn sinh yếu không hiểu rõ về những thứ như tham chiếu và tham trị thực sự sẽ phải quỳ gối trước những đoạn code như vậy.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">function <span class="title">ninjaFunction</span><span class="params">(elem)</span> </span>&#123;</span><br><span class="line">  <span class="comment">// 20 lines of code working with elem</span></span><br><span class="line"></span><br><span class="line">  elem = clone(elem);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 20 more lines, now working with the clone of the elem!</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Khi muốn làm việc với biến <code>elem</code> ở nửa sau của hàm, thậm chí, ngay cả một ninja khác cũng có thể sẽ phải bất ngờ...Chỉ khi debug đoạn code trên từng dòng, anh ta mới có cơ hội nhận ra mình đang làm việc với bản clone của biến đó.</p>
+<h2 id="thể-hiện-tình-yêu-đối-với-những-gì-bạn-tạo-ra">Thể hiện tình yêu đối với những gì bạn tạo ra</h2>
+<p>Hãy để những môn sinh trẻ tuổi thấy được sự tuyệt vời của những thứ bạn tạo ra! Những cái tên như <code>superElement</code>, <code>megaFrame</code> và <code>niceItem</code> chắc chắn sẽ soi sáng họ.</p>
+<p>Thật vậy, một cái gì đó được naming: <code>super...</code>, <code>mega...</code>, <code>nice...</code> hẳn là một thứ tuyệt vời. Nhưng mặt khác - điều đó không mang lại thông tin chi tiết nào. Môn sinh trẻ tuổi có thể sẽ tự ngộ ra một ý nghĩa ẩn nào đó, sau khi đã thiền định trong một hoặc hai giờ.</p>
+<h2 id="chồng-chéo-các-biến-bên-ngoài">Chồng chéo các biến bên ngoài</h2>
+<blockquote>
+<p>When in the light, can’t see anything in the darkness. When in the darkness, can see everything in the light.</p>
+<p><cite>Guan Yin Zi</cite></p>
+</blockquote>
+<p>Sử dụng cùng một tên biến cho biến ở trong và ngoài một scope nào đó. Ví dụ</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">let user = authenticateUser();</span><br><span class="line"></span><br><span class="line"><span class="function">function <span class="title">render</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  let user = anotherValue();</span><br><span class="line">  ...</span><br><span class="line">  ... <span class="comment">//many lines...</span></span><br><span class="line">  ...</span><br><span class="line">  ... <span class="comment">// &lt;-- a programmer wants to work with user here and...</span></span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Môn sinh trẻ tuổi đang làm việc với đoạn code bên trong function render sẽ không thể nhận ra có một biến local khác cùng tên <code>user</code> mới thực sự là biến đang được sử dụng. Anh ta vẫn đang tưởng mình đang sử dụng biến user là kết quả của <code>authenticateUser()</code>...!!! Ok happy debugging :))</p>
+<h2 id="side-effects-everywhere">Side-effects everywhere!!!</h2>
+<p>Có những chức năng giống như chúng <strong>không thay đổi gì cả</strong>. Những function với cái tên như <code>isReady()</code>, <code>checkPermission()</code>, <code>findTags()</code>,... Chúng được giả định để thực hiện các phép tính, tìm và trả về dữ liệu mà <strong>không thay đổi bất kỳ thứ gì bên ngoài chúng</strong>. Nói cách khác, chúng không có <strong>&quot;side effect&quot;</strong>.</p>
+<ul>
+<li>Một ninja đắc đạo biết cách <strong>thêm vào chúng những chức năng hữu ích</strong> để hỗ trợ đồng đội.</li>
+</ul>
+<p>Biểu hiện của sự ngạc nhiên trên khuôn mặt đồng nghiệp của bạn khi anh ta thấy một chức năng có tên là <code>check...</code> hoặc <code>find...</code> thay đổi một cái gì đó - chắc chắn sẽ là lý do anh ấy rời xa bạn hơn :)).</p>
+<ul>
+<li>Một cách khác để gây ngạc nhiên cho anh bạn đồng nghiệp là <strong>trả lại kết quả không chuẩn</strong>.</li>
+</ul>
+<p>Với cách suy nghĩ còn non nớt chưa qua rèn rũa của một môn sinh, <code>checkPermission()</code> hẳn là một thứ gì đó mà sẽ trả về <code>true/false</code>, nhưng là một ninja có trách nhiệm, bạn nên trả về nhiều hơn để giúp anh ta, hãy trả về cho anh ấy một object.</p>
+<p>Cho đến khi môn sinh trẻ tuổi kia viết những thứ đại loại như <code>if(checkPermission(...))</code>, anh ta sẽ tự hỏi tại sao nó không hoạt động. Nói với anh ấy: “Đọc tài liệu đi!!!”. Và <strong>đưa cho anh ấy bài viết này</strong>.</p>
+<h2 id="powerful-functions">Powerful functions!</h2>
+<blockquote>
+<p>The great Tao flows everywhere, both to the left and to the right.</p>
+<p><cite>Laozi (Tao Te Ching)</cite></p>
+</blockquote>
+<p>Đừng giới hạn chức năng function của bạn chỉ bởi vì cái tên của nó. Hãy để cho nó làm được nhiều hơn thế.</p>
+<p>Ví dụ như function <code>validateEmail(email)</code> bên cạnh việc kiểm tra tính đúng đắn của email, nó nên xuất ra thông báo về lỗi đó và gửi yêu cầu để người dùng gửi lại email chẳng hạn. Không gì tốt hơn việc <strong>chỉ gọi một function và bạn đã có mọi thứ bạn muốn</strong> :)).</p>
+<p>Những ninja giỏi biết cách giấu hàng tá logic vào trong code của họ, để không ai có thể đánh cắp chúng từ bên ngoài.</p>
+<p><img src="https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif"></p>
+<p><strong>Kết hợp nhiều logic vào trong cùng một chỗ giúp bảo vệ code của bạn khỏi nguy cơ bị tái sử dụng.</strong></p>
+<p>Tưởng tượng một thằng ngốc nào đó trong team muốn sử dụng code của một ninja như bạn, ví dụ như hàm <code>validateEmail(email)</code> bên trên. Sau vài giờ thiền định và nhận ra function bạn viết làm được còn nhiều hơn cả những gì một gã ngốc như anh ta mong đợi (kiểm tra tính đúng đắn của email), nghiễm nhiên, anh ta sẽ bỏ cuộc và không có ý định làm phiền đến khoảng thời gian thiền định của bạn nữa.</p>
+<h1 id="tldr">TL;DR</h1>
+<p>Tất cả những <strong>code lý</strong> trong <strong>code đạo</strong> của ninja đạo kể trên đều từ source code có thật...Nhiều khi nó được viết bởi những developer nhiều năm kinh nghiệm, có lẽ có thể còn nhiều hơn cả bạn ;).</p>
+<ul>
+<li>Tuân theo <strong>một vài đạo lý</strong> trong số này, code của bạn sẽ tràn đầy sự bất ngờ.</li>
+<li>Tuân theo <strong>phần lớn đạo lý</strong> trong số này, code của bạn sẽ thực sự là của bạn, không ai muốn sửa hay động đến nó.</li>
+<li>Tuân theo <strong>tất cả những đạo lý</strong> này, code của bạn sẽ trở thành một bài học có giá trị cho các môn sinh trẻ tìm kiếm sự giác ngộ.</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2018/06/19/install-nodejs/" class="prev">PREV</a><a href="/2018/05/21/dependency-injection/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'fromnoobstogeeks';
+var disqus_identifier = '2018/06/05/ninja-code/';
+var disqus_title = 'Ninja Code';
+var disqus_url = 'https://fromnoobstogeeks.com/2018/06/05/ninja-code/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//fromnoobstogeeks.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 - 2019 <a href="https://fromnoobstogeeks.com">khanhtc</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>
