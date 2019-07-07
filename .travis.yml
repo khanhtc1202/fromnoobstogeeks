@@ -4,7 +4,7 @@ node_js:
 addons:
   ssh_known_hosts: fromnoobstogeeks.com
 before_install:
-- npm install -g hexo-cli
+- npm install -g hexo-cli yarn
 - wget https://github.com/jgm/pandoc/releases/download/2.3/pandoc-2.3-1-amd64.deb && sudo dpkg -i pandoc-2.3-1-amd64.deb
 - openssl aes-256-cbc -K $encrypted_936f9aa5c77b_key -iv $encrypted_936f9aa5c77b_iv
   -in deploy_rsa.enc -out deploy_rsa -d
@@ -14,6 +14,6 @@ before_install:
 deploy:
   provider: script
   skip_cleanup: true
-  script: npm install && hexo generate --deploy && scp -r $TRAVIS_BUILD_DIR/public/* blog@fromnoobstogeeks.com:/home/blog/web/fromnoobstogeeks
+  script: yarn install && hexo generate --deploy && scp -r $TRAVIS_BUILD_DIR/public/* blog@fromnoobstogeeks.com:/home/blog/web/fromnoobstogeeks
   on:
     branch: develop
